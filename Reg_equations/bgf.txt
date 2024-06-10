@@ -1,0 +1,32 @@
+[1] "Due to full final dataset of DataNWG-BRE not used for imputation. However, the Regression might be of interest anyway."
+
+Call:
+lm(formula = bgf ~ as.factor(hk_geb):geb_f_hoehe_mittel_iwu:geb_flaeche, 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean)
+
+Weighted Residuals:
+   Min     1Q Median     3Q    Max 
+-26996   -217    -78    171  38074 
+
+Coefficients:
+                                                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                            4.102e+02  2.850e+01  14.392  < 2e-16 ***
+as.factor(hk_geb)1:geb_f_hoehe_mittel_iwu:geb_flaeche  2.064e-01  3.022e-03  68.304  < 2e-16 ***
+as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu:geb_flaeche  2.107e-01  7.558e-03  27.874  < 2e-16 ***
+as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu:geb_flaeche  2.686e-01  5.604e-03  47.938  < 2e-16 ***
+as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu:geb_flaeche  2.864e-01  7.581e-03  37.785  < 2e-16 ***
+as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu:geb_flaeche  2.465e-01  1.199e-02  20.562  < 2e-16 ***
+as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu:geb_flaeche  1.016e-01  7.543e-03  13.473  < 2e-16 ***
+as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu:geb_flaeche  2.499e-01  1.157e-02  21.606  < 2e-16 ***
+as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu:geb_flaeche  1.316e-01  1.696e-03  77.582  < 2e-16 ***
+as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu:geb_flaeche  1.264e-01  1.506e-03  83.975  < 2e-16 ***
+as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu:geb_flaeche 9.904e-02  2.324e-02   4.261 2.07e-05 ***
+as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu:geb_flaeche 1.215e-01  2.882e-02   4.215 2.54e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1865 on 5091 degrees of freedom
+Multiple R-squared:  0.8063,	Adjusted R-squared:  0.8059 
+F-statistic:  1927 on 11 and 5091 DF,  p-value: < 2.2e-16
+
+[1] "bgf = 410.15256751 +   0.20643486 * as.factor(hk_geb)1:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.21067971 * as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.26863474 * as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.28643407 * as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.24646056 * as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.10162548 * as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.24994220 * as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.13154967 * as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.12642900 * as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.09903762 * as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu:geb_flaeche +   0.12148226 * as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu:geb_flaeche"

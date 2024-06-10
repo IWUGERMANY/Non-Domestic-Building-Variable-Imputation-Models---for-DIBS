@@ -1,0 +1,58 @@
+[1] "Also the regression equation contains NAs, it has been used for the imputation, as these combinations do not exist in the DataNWG BRE data and therfore do not affect the prediction"
+[1] "-7 nur aus Teilmenge RLT vorhanden qH1 = 3 (Ja, zentrale Anlage(n) vorhanden) imputieren! Auf basis von qh1 (siehe oben). Nur Anlagen welche qh1 = 3 sind bekommen auch hier Eigenschaften zugewiesen! FÃ¤lle identifizieren, welche qh1==3 und qh3_1 bis qh3_9==-8. Diese Anlagen mÃ¼ssen zu qh3_1 bis qh3_9==-7 abgeÃ¤ndert werden, da es sich bei diesen GebÃ¤ude um diejenigen handelt, welche unter qh1 eine 3 zugewÃ¼rfelt bekommen haben. In qh3_1 bis qh3_9==-8 waren diese, da vorher qh1==-7 war konsequent als -8 eingetragen. In der qh3_1 bis qh3_9==-7 Imputation mÃ¼ssen diese nun aber BerÃ¼cksichtig werden, um Konsistenz inerhalb eines GebÃ¤udedatensatzes zu gewÃ¤hrleisten."
+
+Call:
+glm(formula = qh3_6 ~ as.factor(hk_geb) * as.factor(bak_grob), 
+    family = quasibinomial, data = DB_BE_clean, weights = (HRF/Sum_HRF_BE_clean) * 
+        N_Clean)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-4.4226  -0.5610  -0.2936  -0.0927   5.8251  
+
+Coefficients: (3 not defined because of singularities)
+                                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                               -0.304054   0.202257  -1.503 0.133061    
+as.factor(hk_geb)2                        -0.831374   0.972404  -0.855 0.392763    
+as.factor(hk_geb)3                        -2.300956   0.823534  -2.794 0.005300 ** 
+as.factor(hk_geb)4                        -0.760813   0.453349  -1.678 0.093603 .  
+as.factor(hk_geb)5                        -1.812360   0.487053  -3.721 0.000209 ***
+as.factor(hk_geb)6                        -1.427700   0.496446  -2.876 0.004111 ** 
+as.factor(hk_geb)7                        -0.431973   0.387924  -1.114 0.265726    
+as.factor(hk_geb)8                        -0.785387   0.317783  -2.471 0.013613 *  
+as.factor(hk_geb)9                         0.659519   0.475952   1.386 0.166136    
+as.factor(hk_geb)10                       -0.248265   0.890725  -0.279 0.780513    
+as.factor(hk_geb)11                      -12.653655 386.572473  -0.033 0.973894    
+as.factor(bak_grob)2                      -0.600962   0.327464  -1.835 0.066757 .  
+as.factor(bak_grob)3                      -0.101693   0.890177  -0.114 0.909070    
+as.factor(hk_geb)2:as.factor(bak_grob)2   -0.568008   1.507015  -0.377 0.706317    
+as.factor(hk_geb)3:as.factor(bak_grob)2    1.045864   1.114241   0.939 0.348134    
+as.factor(hk_geb)4:as.factor(bak_grob)2   -0.641927   0.985246  -0.652 0.514840    
+as.factor(hk_geb)5:as.factor(bak_grob)2    0.789338   0.882304   0.895 0.371188    
+as.factor(hk_geb)6:as.factor(bak_grob)2    0.243522   0.762356   0.319 0.749461    
+as.factor(hk_geb)7:as.factor(bak_grob)2   -1.752027   0.651654  -2.689 0.007289 ** 
+as.factor(hk_geb)8:as.factor(bak_grob)2    0.305065   0.474225   0.643 0.520174    
+as.factor(hk_geb)9:as.factor(bak_grob)2   -0.855928   0.628011  -1.363 0.173199    
+as.factor(hk_geb)10:as.factor(bak_grob)2  -3.226431   1.307474  -2.468 0.013757 *  
+as.factor(hk_geb)11:as.factor(bak_grob)2         NA         NA      NA       NA    
+as.factor(hk_geb)2:as.factor(bak_grob)3    1.901596   1.458843   1.303 0.192690    
+as.factor(hk_geb)3:as.factor(bak_grob)3   -0.113663   1.742575  -0.065 0.948006    
+as.factor(hk_geb)4:as.factor(bak_grob)3    0.821434   1.251346   0.656 0.511684    
+as.factor(hk_geb)5:as.factor(bak_grob)3   -2.219861   2.099864  -1.057 0.290687    
+as.factor(hk_geb)6:as.factor(bak_grob)3    4.571798   1.445997   3.162 0.001613 ** 
+as.factor(hk_geb)7:as.factor(bak_grob)3    0.002812   1.478540   0.002 0.998483    
+as.factor(hk_geb)8:as.factor(bak_grob)3   -0.106990   1.353652  -0.079 0.937018    
+as.factor(hk_geb)9:as.factor(bak_grob)3   -2.142097   1.575506  -1.360 0.174239    
+as.factor(hk_geb)10:as.factor(bak_grob)3         NA         NA      NA       NA    
+as.factor(hk_geb)11:as.factor(bak_grob)3         NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for quasibinomial family taken to be 1.026583)
+
+    Null deviance: 1111.91  on 1084  degrees of freedom
+Residual deviance:  916.48  on 1055  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 12
+

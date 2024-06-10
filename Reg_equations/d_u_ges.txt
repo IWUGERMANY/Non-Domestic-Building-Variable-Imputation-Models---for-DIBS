@@ -1,0 +1,40 @@
+
+Call:
+lm(formula = d_u_ges ~ as.factor(hk_geb) + as.factor(bak), weights = (HRF/Sum_HRF_BE_clean))
+
+Weighted Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.057398 -0.001690 -0.000003  0.001121  0.082756 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          0.7117207  0.0378424  18.807  < 2e-16 ***
+as.factor(hk_geb)2   0.0033601  0.0542375   0.062 0.950605    
+as.factor(hk_geb)3  -0.0757297  0.0366099  -2.069 0.038661 *  
+as.factor(hk_geb)4  -0.0317801  0.0267996  -1.186 0.235765    
+as.factor(hk_geb)5  -0.0070337  0.0276914  -0.254 0.799508    
+as.factor(hk_geb)6  -0.0216539  0.0356917  -0.607 0.544094    
+as.factor(hk_geb)7   0.0977815  0.0235869   4.146 3.47e-05 ***
+as.factor(hk_geb)8   0.0006523  0.0195284   0.033 0.973355    
+as.factor(hk_geb)9   0.1038766  0.0277648   3.741 0.000186 ***
+as.factor(hk_geb)10 -0.0112153  0.0376512  -0.298 0.765817    
+as.factor(hk_geb)11  0.2746349  0.0561896   4.888 1.07e-06 ***
+as.factor(bak)2      0.0063164  0.0386245   0.164 0.870108    
+as.factor(bak)3      0.0263140  0.0430059   0.612 0.540664    
+as.factor(bak)4      0.0679033  0.0412797   1.645 0.100069    
+as.factor(bak)5      0.0282282  0.0384181   0.735 0.462534    
+as.factor(bak)6     -0.3022527  0.0378994  -7.975 2.04e-15 ***
+as.factor(bak)7     -0.2220106  0.0440915  -5.035 5.01e-07 ***
+as.factor(bak)8     -0.3503857  0.0386600  -9.063  < 2e-16 ***
+as.factor(bak)9     -0.4787736  0.0400317 -11.960  < 2e-16 ***
+as.factor(bak)10    -0.5449941  0.0401195 -13.584  < 2e-16 ***
+as.factor(bak)11    -0.5625760  0.0498735 -11.280  < 2e-16 ***
+as.factor(bak)12    -0.5620055  0.0676530  -8.307  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.005977 on 3506 degrees of freedom
+Multiple R-squared:  0.3086,	Adjusted R-squared:  0.3045 
+F-statistic: 74.53 on 21 and 3506 DF,  p-value: < 2.2e-16
+
+[1] "d_u_ges = 0.7117206998 + 0.0033601213 * as.factor(hk_geb)2 - 0.0757297320 * as.factor(hk_geb)3 - 0.0317800928 * as.factor(hk_geb)4 - 0.0070337095 * as.factor(hk_geb)5 - 0.0216539114 * as.factor(hk_geb)6 + 0.0977815057 * as.factor(hk_geb)7 + 0.0006523196 * as.factor(hk_geb)8 + 0.1038765725 * as.factor(hk_geb)9 - 0.0112153069 * as.factor(hk_geb)10 + 0.2746349289 * as.factor(hk_geb)11 + 0.0063164010 * as.factor(bak)2 + 0.0263139972 * as.factor(bak)3 + 0.0679033066 * as.factor(bak)4 + 0.0282281677 * as.factor(bak)5 - 0.3022527265 * as.factor(bak)6 - 0.2220106077 * as.factor(bak)7 - 0.3503857256 * as.factor(bak)8 - 0.4787735533 * as.factor(bak)9 - 0.5449941283 * as.factor(bak)10 - 0.5625760432 * as.factor(bak)11 - 0.5620055192 * as.factor(bak)12"

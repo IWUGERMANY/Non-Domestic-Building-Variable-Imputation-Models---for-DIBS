@@ -1,0 +1,44 @@
+
+Call:
+lm(formula = u_fen ~ as.factor(hk_geb) + as.factor(glasart_1) + 
+    as.factor(bak), weights = (HRF/Sum_HRF_BE_clean) * N_Clean)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.1643 -0.1859  0.0604  0.2513 11.4905 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            2.33984    0.49010   4.774 1.86e-06 ***
+as.factor(hk_geb)2     0.34367    0.08030   4.280 1.91e-05 ***
+as.factor(hk_geb)3     0.17825    0.05165   3.451 0.000563 ***
+as.factor(hk_geb)4    -0.17070    0.03708  -4.603 4.28e-06 ***
+as.factor(hk_geb)5     0.01470    0.03850   0.382 0.702554    
+as.factor(hk_geb)6     0.19739    0.04884   4.041 5.40e-05 ***
+as.factor(hk_geb)7    -0.01059    0.03167  -0.334 0.738096    
+as.factor(hk_geb)8     0.10906    0.02673   4.080 4.58e-05 ***
+as.factor(hk_geb)9     0.07312    0.03689   1.982 0.047524 *  
+as.factor(hk_geb)10    0.14492    0.05240   2.766 0.005702 ** 
+as.factor(hk_geb)11    0.16234    0.10764   1.508 0.131573    
+as.factor(glasart_1)1  1.80113    0.48809   3.690 0.000227 ***
+as.factor(glasart_1)2 -0.15091    0.48710  -0.310 0.756722    
+as.factor(glasart_1)3 -1.01928    0.48851  -2.087 0.036986 *  
+as.factor(bak)2        0.24748    0.05625   4.400 1.11e-05 ***
+as.factor(bak)3        0.26600    0.06183   4.302 1.73e-05 ***
+as.factor(bak)4        0.26682    0.06085   4.385 1.18e-05 ***
+as.factor(bak)5        0.32716    0.05504   5.944 2.99e-09 ***
+as.factor(bak)6        0.23470    0.05551   4.228 2.41e-05 ***
+as.factor(bak)7        0.53216    0.06400   8.315  < 2e-16 ***
+as.factor(bak)8        0.34426    0.05561   6.191 6.50e-10 ***
+as.factor(bak)9       -0.38328    0.05821  -6.584 5.08e-11 ***
+as.factor(bak)10      -0.70353    0.05746 -12.243  < 2e-16 ***
+as.factor(bak)11      -0.81200    0.07019 -11.568  < 2e-16 ***
+as.factor(bak)12      -0.63849    0.10810  -5.906 3.75e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5762 on 4625 degrees of freedom
+Multiple R-squared:  0.6467,	Adjusted R-squared:  0.6449 
+F-statistic: 352.8 on 24 and 4625 DF,  p-value: < 2.2e-16
+
+[1] "u_fen = 2.33983779 + 0.34367030 * as.factor(hk_geb)2 + 0.17825186 * as.factor(hk_geb)3 - 0.17069874 * as.factor(hk_geb)4 + 0.01470141 * as.factor(hk_geb)5 + 0.19739058 * as.factor(hk_geb)6 - 0.01058874 * as.factor(hk_geb)7 + 0.10905607 * as.factor(hk_geb)8 + 0.07311743 * as.factor(hk_geb)9 + 0.14491837 * as.factor(hk_geb)10 + 0.16234377 * as.factor(hk_geb)11 + 1.80113026 * as.factor(glasart_1)1 - 0.15090773 * as.factor(glasart_1)2 - 1.01927975 * as.factor(glasart_1)3 + 0.24748234 * as.factor(bak)2 + 0.26600488 * as.factor(bak)3 + 0.26682277 * as.factor(bak)4 + 0.32715667 * as.factor(bak)5 + 0.23469520 * as.factor(bak)6 + 0.53215970 * as.factor(bak)7 + 0.34425886 * as.factor(bak)8 - 0.38328213 * as.factor(bak)9 - 0.70352950 * as.factor(bak)10 - 0.81200481 * as.factor(bak)11 - 0.63849142 * as.factor(bak)12"

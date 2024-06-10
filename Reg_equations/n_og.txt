@@ -1,0 +1,42 @@
+
+Call:
+lm(formula = n_og ~ as.factor(hk_geb):geb_f_hoehe_mittel_iwu:as.factor(dachform_be), 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.7849 -0.2438 -0.0762  0.1884  9.8178 
+
+Coefficients:
+                                                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                                        0.666958   0.023952  27.846  < 2e-16 ***
+as.factor(hk_geb)1:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.158109   0.003877  40.776  < 2e-16 ***
+as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.136359   0.014863   9.174  < 2e-16 ***
+as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.178100   0.007775  22.907  < 2e-16 ***
+as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.158145   0.006403  24.700  < 2e-16 ***
+as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.148782   0.006117  24.321  < 2e-16 ***
+as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.075593   0.011624   6.503 8.62e-11 ***
+as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.215335   0.004802  44.839  < 2e-16 ***
+as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.109187   0.005221  20.914  < 2e-16 ***
+as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1  0.084008   0.007849  10.703  < 2e-16 ***
+as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 0.096676   0.008593  11.250  < 2e-16 ***
+as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 0.085797   0.015547   5.519 3.59e-08 ***
+as.factor(hk_geb)1:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.214431   0.004626  46.355  < 2e-16 ***
+as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.203198   0.011468  17.719  < 2e-16 ***
+as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.244037   0.010182  23.966  < 2e-16 ***
+as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.155762   0.007244  21.501  < 2e-16 ***
+as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.135273   0.009475  14.276  < 2e-16 ***
+as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.063406   0.008265   7.672 2.02e-14 ***
+as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.198132   0.005452  36.343  < 2e-16 ***
+as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.117461   0.004494  26.136  < 2e-16 ***
+as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2  0.127026   0.006889  18.438  < 2e-16 ***
+as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 0.079592   0.013719   5.802 6.97e-09 ***
+as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 0.065590   0.029882   2.195   0.0282 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7235 on 4983 degrees of freedom
+Multiple R-squared:  0.5104,	Adjusted R-squared:  0.5083 
+F-statistic: 236.2 on 22 and 4983 DF,  p-value: < 2.2e-16
+
+[1] "n_og = 0.66695844 + 0.15810893 * as.factor(hk_geb)1:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.13635914 * as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.17810043 * as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.15814452 * as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.14878224 * as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.07559339 * as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.21533490 * as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.10918693 * as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.08400796 * as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.09667628 * as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.08579651 * as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)1 + 0.21443060 * as.factor(hk_geb)1:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.20319769 * as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.24403695 * as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.15576197 * as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.13527282 * as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.06340621 * as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.19813220 * as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.11746087 * as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.12702611 * as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.07959203 * as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2 + 0.06558992 * as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu:as.factor(dachform_be)2"

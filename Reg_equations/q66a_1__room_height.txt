@@ -1,0 +1,63 @@
+
+Call:
+lm(formula = q66a_1 ~ as.factor(hk_geb) * n_og * geb_f_hoehe_mittel_iwu, 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-1666.0   -35.2   -10.4    11.8  8340.1 
+
+Coefficients:
+                                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                      330.1036    26.4359  12.487  < 2e-16 ***
+as.factor(hk_geb)2                               148.2824   118.0725   1.256 0.209229    
+as.factor(hk_geb)3                               -59.6096    87.2811  -0.683 0.494664    
+as.factor(hk_geb)4                               -28.9778    61.5685  -0.471 0.637906    
+as.factor(hk_geb)5                                -8.6036    58.6213  -0.147 0.883323    
+as.factor(hk_geb)6                                57.5995   110.5877   0.521 0.602496    
+as.factor(hk_geb)7                               -53.0524    39.0031  -1.360 0.173827    
+as.factor(hk_geb)8                              -123.4183    44.1475  -2.796 0.005201 ** 
+as.factor(hk_geb)9                               152.2727    55.9709   2.721 0.006541 ** 
+as.factor(hk_geb)10                             -534.1943   176.6115  -3.025 0.002502 ** 
+as.factor(hk_geb)11                              122.8717   465.2276   0.264 0.791706    
+n_og                                               6.3627    12.1424   0.524 0.600300    
+geb_f_hoehe_mittel_iwu                            -0.8580     3.0048  -0.286 0.775234    
+as.factor(hk_geb)2:n_og                          -70.5306    43.4008  -1.625 0.104207    
+as.factor(hk_geb)3:n_og                           -4.5884    27.2454  -0.168 0.866269    
+as.factor(hk_geb)4:n_og                           -9.8943    27.5787  -0.359 0.719786    
+as.factor(hk_geb)5:n_og                          -25.1530    31.6155  -0.796 0.426310    
+as.factor(hk_geb)6:n_og                          -59.0463    77.2141  -0.765 0.444483    
+as.factor(hk_geb)7:n_og                          -15.7280    17.9159  -0.878 0.380055    
+as.factor(hk_geb)8:n_og                          -17.8674    26.1456  -0.683 0.494400    
+as.factor(hk_geb)9:n_og                          -86.3465    37.6729  -2.292 0.021948 *  
+as.factor(hk_geb)10:n_og                         237.1162   124.5717   1.903 0.057042 .  
+as.factor(hk_geb)11:n_og                          -3.9064   431.5519  -0.009 0.992778    
+as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu         -7.1289    14.7981  -0.482 0.630010    
+as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu         -0.1933     9.7178  -0.020 0.984135    
+as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu          0.3573     8.5570   0.042 0.966694    
+as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu          8.5903     7.6302   1.126 0.260296    
+as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu         13.5479    13.4397   1.008 0.313478    
+as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu          2.3485     5.5445   0.424 0.671892    
+as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu         60.4057     5.7761  10.458  < 2e-16 ***
+as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu         -8.9222     6.7419  -1.323 0.185764    
+as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu        95.6985    26.4833   3.614 0.000305 ***
+as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu        19.1399    50.3778   0.380 0.704016    
+n_og:geb_f_hoehe_mittel_iwu                       -0.5187     0.7042  -0.736 0.461477    
+as.factor(hk_geb)2:n_og:geb_f_hoehe_mittel_iwu     3.7651     3.6891   1.021 0.307497    
+as.factor(hk_geb)3:n_og:geb_f_hoehe_mittel_iwu     0.6735     1.9849   0.339 0.734387    
+as.factor(hk_geb)4:n_og:geb_f_hoehe_mittel_iwu     1.0143     2.8089   0.361 0.718033    
+as.factor(hk_geb)5:n_og:geb_f_hoehe_mittel_iwu    -0.5491     2.6993  -0.203 0.838819    
+as.factor(hk_geb)6:n_og:geb_f_hoehe_mittel_iwu     1.6167     9.2281   0.175 0.860936    
+as.factor(hk_geb)7:n_og:geb_f_hoehe_mittel_iwu     0.4935     1.1975   0.412 0.680311    
+as.factor(hk_geb)8:n_og:geb_f_hoehe_mittel_iwu   -14.4658     2.8089  -5.150 2.71e-07 ***
+as.factor(hk_geb)9:n_og:geb_f_hoehe_mittel_iwu     5.7017     2.7810   2.050 0.040398 *  
+as.factor(hk_geb)10:n_og:geb_f_hoehe_mittel_iwu  -36.6241    15.4759  -2.367 0.017995 *  
+as.factor(hk_geb)11:n_og:geb_f_hoehe_mittel_iwu  -15.0993    40.9708  -0.369 0.712489    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 217.2 on 4790 degrees of freedom
+Multiple R-squared:  0.1424,	Adjusted R-squared:  0.1347 
+F-statistic: 18.49 on 43 and 4790 DF,  p-value: < 2.2e-16
+
+[1] "q66a_1 = 330.1036220 + 148.2823648 * as.factor(hk_geb)2 -  59.6096080 * as.factor(hk_geb)3 -  28.9777716 * as.factor(hk_geb)4 -   8.6035921 * as.factor(hk_geb)5 +  57.5995353 * as.factor(hk_geb)6 -  53.0523745 * as.factor(hk_geb)7 - 123.4183124 * as.factor(hk_geb)8 + 152.2726973 * as.factor(hk_geb)9 - 534.1942691 * as.factor(hk_geb)10 + 122.8717025 * as.factor(hk_geb)11 +   6.3626622 * n_og -   0.8580232 * geb_f_hoehe_mittel_iwu -  70.5306043 * as.factor(hk_geb)2:n_og -   4.5883519 * as.factor(hk_geb)3:n_og -   9.8942913 * as.factor(hk_geb)4:n_og -  25.1529895 * as.factor(hk_geb)5:n_og -  59.0462876 * as.factor(hk_geb)6:n_og -  15.7279678 * as.factor(hk_geb)7:n_og -  17.8673678 * as.factor(hk_geb)8:n_og -  86.3464558 * as.factor(hk_geb)9:n_og + 237.1162378 * as.factor(hk_geb)10:n_og -   3.9064011 * as.factor(hk_geb)11:n_og -   7.1288841 * as.factor(hk_geb)2:geb_f_hoehe_mittel_iwu -   0.1932528 * as.factor(hk_geb)3:geb_f_hoehe_mittel_iwu +   0.3573174 * as.factor(hk_geb)4:geb_f_hoehe_mittel_iwu +   8.5902733 * as.factor(hk_geb)5:geb_f_hoehe_mittel_iwu +  13.5479444 * as.factor(hk_geb)6:geb_f_hoehe_mittel_iwu +   2.3485154 * as.factor(hk_geb)7:geb_f_hoehe_mittel_iwu +  60.4057120 * as.factor(hk_geb)8:geb_f_hoehe_mittel_iwu -   8.9222346 * as.factor(hk_geb)9:geb_f_hoehe_mittel_iwu +  95.6984681 * as.factor(hk_geb)10:geb_f_hoehe_mittel_iwu +  19.1399275 * as.factor(hk_geb)11:geb_f_hoehe_mittel_iwu -   0.5186519 * n_og:geb_f_hoehe_mittel_iwu +   3.7651195 * as.factor(hk_geb)2:n_og:geb_f_hoehe_mittel_iwu +   0.6734985 * as.factor(hk_geb)3:n_og:geb_f_hoehe_mittel_iwu +   1.0143230 * as.factor(hk_geb)4:n_og:geb_f_hoehe_mittel_iwu -   0.5490878 * as.factor(hk_geb)5:n_og:geb_f_hoehe_mittel_iwu +   1.6166945 * as.factor(hk_geb)6:n_og:geb_f_hoehe_mittel_iwu +   0.4934574 * as.factor(hk_geb)7:n_og:geb_f_hoehe_mittel_iwu -  14.4658004 * as.factor(hk_geb)8:n_og:geb_f_hoehe_mittel_iwu +   5.7016800 * as.factor(hk_geb)9:n_og:geb_f_hoehe_mittel_iwu -  36.6241139 * as.factor(hk_geb)10:n_og:geb_f_hoehe_mittel_iwu -  15.0992527 * as.factor(hk_geb)11:n_og:geb_f_hoehe_mittel_iwu"

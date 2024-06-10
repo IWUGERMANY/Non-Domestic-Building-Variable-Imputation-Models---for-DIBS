@@ -1,0 +1,161 @@
+Call:
+multinom(formula = qh1 ~ as.factor(hk_geb):as.factor(bak), data = DB_BE_clean, 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean, maxit = 1000, 
+    MaxNWts = 1000)
+
+Coefficients:
+  (Intercept) as.factor(hk_geb)1:as.factor(bak)1 as.factor(hk_geb)2:as.factor(bak)1 as.factor(hk_geb)3:as.factor(bak)1 as.factor(hk_geb)4:as.factor(bak)1 as.factor(hk_geb)5:as.factor(bak)1
+2   -6.710455                          3.3530339                          -2.699600                          -6.435456                        -11.8884074                          3.5773336
+3   -2.898115                          0.2272664                           3.566655                           1.910473                          0.8038975                          0.9340108
+  as.factor(hk_geb)6:as.factor(bak)1 as.factor(hk_geb)7:as.factor(bak)1 as.factor(hk_geb)8:as.factor(bak)1 as.factor(hk_geb)9:as.factor(bak)1 as.factor(hk_geb)10:as.factor(bak)1
+2                        -13.8158894                          4.4665543                         -17.890245                          -9.280196                                   0
+3                          0.2251897                         -0.7178568                          -1.210692                           2.405112                                   0
+  as.factor(hk_geb)11:as.factor(bak)1 as.factor(hk_geb)1:as.factor(bak)2 as.factor(hk_geb)2:as.factor(bak)2 as.factor(hk_geb)3:as.factor(bak)2 as.factor(hk_geb)4:as.factor(bak)2
+2                                   0                          3.3080645                            5.14420                           3.000488                         2.59559740
+3                                   0                          0.8931655                          -16.26278                           1.086760                        -0.04495571
+  as.factor(hk_geb)5:as.factor(bak)2 as.factor(hk_geb)6:as.factor(bak)2 as.factor(hk_geb)7:as.factor(bak)2 as.factor(hk_geb)8:as.factor(bak)2 as.factor(hk_geb)9:as.factor(bak)2
+2                          3.4870350                           4.666210                           5.216255                          3.6441378                         -20.364471
+3                          0.9826788                           1.402638                           0.256181                          0.3262031                          -1.516504
+  as.factor(hk_geb)10:as.factor(bak)2 as.factor(hk_geb)11:as.factor(bak)2 as.factor(hk_geb)1:as.factor(bak)3 as.factor(hk_geb)2:as.factor(bak)3 as.factor(hk_geb)3:as.factor(bak)3
+2                           -9.374043                           -7.608682                           3.237497                           5.635368                          3.5878422
+3                            2.351178                          -14.472822                           1.062665                           0.502773                          0.3265533
+  as.factor(hk_geb)4:as.factor(bak)3 as.factor(hk_geb)5:as.factor(bak)3 as.factor(hk_geb)6:as.factor(bak)3 as.factor(hk_geb)7:as.factor(bak)3 as.factor(hk_geb)8:as.factor(bak)3 as.factor(hk_geb)9:as.factor(bak)3
+2                          3.5516223                          2.7143724                          3.2636492                           3.808015                           2.325006                           2.593137
+3                          0.1739248                         -0.4556244                         -0.3889603                           1.676390                           1.526686                          -1.094258
+  as.factor(hk_geb)10:as.factor(bak)3 as.factor(hk_geb)11:as.factor(bak)3 as.factor(hk_geb)1:as.factor(bak)4 as.factor(hk_geb)2:as.factor(bak)4 as.factor(hk_geb)3:as.factor(bak)4
+2                          -13.700622                           -14.23294                           3.491501                           5.428532                          0.8626305
+3                            0.862737                           -17.30438                           1.476913                           3.347311                         -1.6074660
+  as.factor(hk_geb)4:as.factor(bak)4 as.factor(hk_geb)5:as.factor(bak)4 as.factor(hk_geb)6:as.factor(bak)4 as.factor(hk_geb)7:as.factor(bak)4 as.factor(hk_geb)8:as.factor(bak)4 as.factor(hk_geb)9:as.factor(bak)4
+2                          2.7112870                        -26.0581349                        -15.4989870                           4.541761                          6.8838191                          4.7090073
+3                          0.8067913                         -0.6907542                          0.2835231                           2.040100                          0.3758167                          0.6272618
+  as.factor(hk_geb)10:as.factor(bak)4 as.factor(hk_geb)11:as.factor(bak)4 as.factor(hk_geb)1:as.factor(bak)5 as.factor(hk_geb)2:as.factor(bak)5 as.factor(hk_geb)3:as.factor(bak)5
+2                         -14.0886910                           -10.73819                          2.5486005                          3.0084372                           4.377198
+3                           0.4344769                           -16.44083                          0.7271071                         -0.0251084                           2.345752
+  as.factor(hk_geb)4:as.factor(bak)5 as.factor(hk_geb)5:as.factor(bak)5 as.factor(hk_geb)6:as.factor(bak)5 as.factor(hk_geb)7:as.factor(bak)5 as.factor(hk_geb)8:as.factor(bak)5 as.factor(hk_geb)9:as.factor(bak)5
+2                          3.5855615                           5.899953                           2.353374                          6.7204134                          3.0718528                          6.4950285
+3                          0.4036748                           1.664190                           1.915504                          0.3694418                         -0.4327857                          0.2133803
+  as.factor(hk_geb)10:as.factor(bak)5 as.factor(hk_geb)11:as.factor(bak)5 as.factor(hk_geb)1:as.factor(bak)6 as.factor(hk_geb)2:as.factor(bak)6 as.factor(hk_geb)3:as.factor(bak)6
+2                           4.8060043                           -13.30899                           3.398855                           8.148377                           2.484750
+3                          -0.6275605                           -17.22646                           1.769791                           4.578625                           3.233538
+  as.factor(hk_geb)4:as.factor(bak)6 as.factor(hk_geb)5:as.factor(bak)6 as.factor(hk_geb)6:as.factor(bak)6 as.factor(hk_geb)7:as.factor(bak)6 as.factor(hk_geb)8:as.factor(bak)6 as.factor(hk_geb)9:as.factor(bak)6
+2                           4.645072                           1.961976                           3.529006                          2.0283557                          1.0766492                           5.400517
+3                           1.646985                           2.644089                           2.181485                         -0.2595647                          0.4368913                           1.301794
+  as.factor(hk_geb)10:as.factor(bak)6 as.factor(hk_geb)11:as.factor(bak)6 as.factor(hk_geb)1:as.factor(bak)7 as.factor(hk_geb)2:as.factor(bak)7 as.factor(hk_geb)3:as.factor(bak)7
+2                          -14.451383                           -17.73725                           3.739642                          -4.181537                          2.5504884
+3                            1.229921                           -17.37771                           1.478896                           3.016023                         -0.3698442
+  as.factor(hk_geb)4:as.factor(bak)7 as.factor(hk_geb)5:as.factor(bak)7 as.factor(hk_geb)6:as.factor(bak)7 as.factor(hk_geb)7:as.factor(bak)7 as.factor(hk_geb)8:as.factor(bak)7 as.factor(hk_geb)9:as.factor(bak)7
+2                           4.214731                           4.930137                           5.154719                           4.079433                          1.8413491                          2.8514779
+3                           1.931085                           2.511704                           3.273768                           2.711739                          0.6656734                          0.3289948
+  as.factor(hk_geb)10:as.factor(bak)7 as.factor(hk_geb)11:as.factor(bak)7 as.factor(hk_geb)1:as.factor(bak)8 as.factor(hk_geb)2:as.factor(bak)8 as.factor(hk_geb)3:as.factor(bak)8
+2                            20.49200                           30.876920                          4.8933213                          -4.744063                          3.1527782
+3                            20.85116                           -3.428926                          0.7405118                           4.175465                          0.8968975
+  as.factor(hk_geb)4:as.factor(bak)8 as.factor(hk_geb)5:as.factor(bak)8 as.factor(hk_geb)6:as.factor(bak)8 as.factor(hk_geb)7:as.factor(bak)8 as.factor(hk_geb)8:as.factor(bak)8 as.factor(hk_geb)9:as.factor(bak)8
+2                          0.5509787                         -21.153916                            4.15323                           1.459217                           4.456263                           4.284452
+3                         -0.4124931                           1.049947                            2.50441                           0.909263                           1.377897                           1.553627
+  as.factor(hk_geb)10:as.factor(bak)8 as.factor(hk_geb)11:as.factor(bak)8 as.factor(hk_geb)1:as.factor(bak)9 as.factor(hk_geb)2:as.factor(bak)9 as.factor(hk_geb)3:as.factor(bak)9
+2                           -14.58033                           -16.66137                           3.742218                          2.6179512                          4.0607168
+3                           -17.30143                           -17.15060                           1.261663                          0.2228193                          0.9357579
+  as.factor(hk_geb)4:as.factor(bak)9 as.factor(hk_geb)5:as.factor(bak)9 as.factor(hk_geb)6:as.factor(bak)9 as.factor(hk_geb)7:as.factor(bak)9 as.factor(hk_geb)8:as.factor(bak)9 as.factor(hk_geb)9:as.factor(bak)9
+2                          3.5990857                          1.9290924                           3.173429                           6.529381                          4.7853218                           3.074400
+3                          0.9103061                          0.2034035                           2.988362                           3.785922                          0.9124248                           2.153983
+  as.factor(hk_geb)10:as.factor(bak)9 as.factor(hk_geb)11:as.factor(bak)9 as.factor(hk_geb)1:as.factor(bak)10 as.factor(hk_geb)2:as.factor(bak)10 as.factor(hk_geb)3:as.factor(bak)10
+2                          -22.990017                           -9.721662                            3.789184                            5.498511                            4.309332
+3                            4.054795                          -15.927572                            2.844955                            3.478854                            3.594772
+  as.factor(hk_geb)4:as.factor(bak)10 as.factor(hk_geb)5:as.factor(bak)10 as.factor(hk_geb)6:as.factor(bak)10 as.factor(hk_geb)7:as.factor(bak)10 as.factor(hk_geb)8:as.factor(bak)10
+2                            4.047654                            4.695383                            4.132029                            4.453127                           5.0164430
+3                            1.808617                            2.379756                            3.141297                            5.266884                           0.4990487
+  as.factor(hk_geb)9:as.factor(bak)10 as.factor(hk_geb)10:as.factor(bak)10 as.factor(hk_geb)11:as.factor(bak)10 as.factor(hk_geb)1:as.factor(bak)11 as.factor(hk_geb)2:as.factor(bak)11
+2                            5.048326                            -24.01258                             27.13821                            3.323241                            6.261144
+3                            1.645034                            -21.80829                             24.79263                            2.182890                            4.491452
+  as.factor(hk_geb)3:as.factor(bak)11 as.factor(hk_geb)4:as.factor(bak)11 as.factor(hk_geb)5:as.factor(bak)11 as.factor(hk_geb)6:as.factor(bak)11 as.factor(hk_geb)7:as.factor(bak)11
+2                            4.638775                           3.7746234                            5.915047                           -2.857065                            6.081724
+3                            3.811096                           0.8636502                            5.441845                            4.672593                            3.952560
+  as.factor(hk_geb)8:as.factor(bak)11 as.factor(hk_geb)9:as.factor(bak)11 as.factor(hk_geb)10:as.factor(bak)11 as.factor(hk_geb)11:as.factor(bak)11 as.factor(hk_geb)1:as.factor(bak)12
+2                          1.46843449                          -13.216381                            -4.321898                            -12.71593                            3.528531
+3                         -0.03125541                            2.363616                           -10.860593                            -17.11442                          -17.140807
+  as.factor(hk_geb)2:as.factor(bak)12 as.factor(hk_geb)3:as.factor(bak)12 as.factor(hk_geb)4:as.factor(bak)12 as.factor(hk_geb)5:as.factor(bak)12 as.factor(hk_geb)6:as.factor(bak)12
+2                           0.1811201                         -10.2036116                           -5.221313                           -8.791493                           0.6618575
+3                          16.8650588                           0.6231813                            4.290662                          -15.355454                           8.1728825
+  as.factor(hk_geb)7:as.factor(bak)12 as.factor(hk_geb)8:as.factor(bak)12 as.factor(hk_geb)9:as.factor(bak)12 as.factor(hk_geb)10:as.factor(bak)12 as.factor(hk_geb)11:as.factor(bak)12
+2                            6.042126                          -9.8091455                           -6.897464                                    0                                    0
+3                            3.782415                           0.8432122                            3.387666                                    0                                    0
+
+Std. Errors:
+  (Intercept) as.factor(hk_geb)1:as.factor(bak)1 as.factor(hk_geb)2:as.factor(bak)1 as.factor(hk_geb)3:as.factor(bak)1 as.factor(hk_geb)4:as.factor(bak)1 as.factor(hk_geb)5:as.factor(bak)1
+2   4.0835908                          4.2435439                         251.552488                          0.3934388                        0.006342206                          4.2526840
+3   0.1155109                          0.8417453                           2.808084                          2.2157023                        1.716500422                          0.7025745
+  as.factor(hk_geb)6:as.factor(bak)1 as.factor(hk_geb)7:as.factor(bak)1 as.factor(hk_geb)8:as.factor(bak)1 as.factor(hk_geb)9:as.factor(bak)1 as.factor(hk_geb)10:as.factor(bak)1
+2                        0.001627973                          4.0998213                       0.0001089713                         0.04554472                                 NaN
+3                        1.683145111                          0.7081297                       1.6958334821                         1.27774274                        2.460596e-10
+  as.factor(hk_geb)11:as.factor(bak)1 as.factor(hk_geb)1:as.factor(bak)2 as.factor(hk_geb)2:as.factor(bak)2 as.factor(hk_geb)3:as.factor(bak)2 as.factor(hk_geb)4:as.factor(bak)2
+2                                 NaN                          4.1206990                       4.315105e+00                          4.5218806                          4.2236412
+3                                 NaN                          0.3103217                       3.129497e-05                          0.8106996                          0.6229516
+  as.factor(hk_geb)5:as.factor(bak)2 as.factor(hk_geb)6:as.factor(bak)2 as.factor(hk_geb)7:as.factor(bak)2 as.factor(hk_geb)8:as.factor(bak)2 as.factor(hk_geb)9:as.factor(bak)2
+2                          4.1846681                           4.430201                           4.089787                          4.1070972                       1.463396e-05
+3                          0.5133855                           1.366632                           0.391753                          0.3668316                       1.565246e+00
+  as.factor(hk_geb)10:as.factor(bak)2 as.factor(hk_geb)11:as.factor(bak)2 as.factor(hk_geb)1:as.factor(bak)3 as.factor(hk_geb)2:as.factor(bak)3 as.factor(hk_geb)3:as.factor(bak)3
+2                          0.04239185                        1.600446e-01                          4.2263841                           4.265921                           5.010353
+3                          1.28468486                        6.611351e-05                          0.5232722                           2.160546                           2.244961
+  as.factor(hk_geb)4:as.factor(bak)3 as.factor(hk_geb)5:as.factor(bak)3 as.factor(hk_geb)6:as.factor(bak)3 as.factor(hk_geb)7:as.factor(bak)3 as.factor(hk_geb)8:as.factor(bak)3 as.factor(hk_geb)9:as.factor(bak)3
+2                          4.1744857                          4.2711687                          4.2027968                          4.1783666                          4.3114277                          4.1800341
+3                          0.7155295                          0.9242695                          0.9289453                          0.4393034                          0.3606231                          0.8490083
+  as.factor(hk_geb)10:as.factor(bak)3 as.factor(hk_geb)11:as.factor(bak)3 as.factor(hk_geb)1:as.factor(bak)4 as.factor(hk_geb)2:as.factor(bak)4 as.factor(hk_geb)3:as.factor(bak)4
+2                         0.001776833                        1.224050e-03                          4.1330551                           4.810217                           5.938319
+3                         1.278302496                        2.330665e-05                          0.3066149                           1.523581                           2.219737
+  as.factor(hk_geb)4:as.factor(bak)4 as.factor(hk_geb)5:as.factor(bak)4 as.factor(hk_geb)6:as.factor(bak)4 as.factor(hk_geb)7:as.factor(bak)4 as.factor(hk_geb)8:as.factor(bak)4 as.factor(hk_geb)9:as.factor(bak)4
+2                          4.4236118                       1.404621e-07                       0.0005452451                          4.3698076                          4.0870029                          4.1559124
+3                          0.6990678                       7.672864e-01                       1.2224131580                          0.9220007                          0.4668214                          0.8799746
+  as.factor(hk_geb)10:as.factor(bak)4 as.factor(hk_geb)11:as.factor(bak)4 as.factor(hk_geb)1:as.factor(bak)5 as.factor(hk_geb)2:as.factor(bak)5 as.factor(hk_geb)3:as.factor(bak)5
+2                         0.001362773                        1.474124e-02                          4.1370013                           4.380228                          4.3881012
+3                         1.457540382                        2.013634e-05                          0.2817231                           1.096693                          0.7999413
+  as.factor(hk_geb)4:as.factor(bak)5 as.factor(hk_geb)5:as.factor(bak)5 as.factor(hk_geb)6:as.factor(bak)5 as.factor(hk_geb)7:as.factor(bak)5 as.factor(hk_geb)8:as.factor(bak)5 as.factor(hk_geb)9:as.factor(bak)5
+2                          4.1449155                          4.1081722                          4.4355569                           4.086652                          4.1026108                           4.102175
+3                          0.5412345                          0.5377848                          0.3913428                           0.429080                          0.3595669                           1.039385
+  as.factor(hk_geb)10:as.factor(bak)5 as.factor(hk_geb)11:as.factor(bak)5 as.factor(hk_geb)1:as.factor(bak)6 as.factor(hk_geb)2:as.factor(bak)6 as.factor(hk_geb)3:as.factor(bak)6
+2                            4.143022                        2.286280e-03                          4.1479504                           4.596541                          4.9966877
+3                            1.495969                        1.867167e-05                          0.2997473                           2.073058                          0.4678731
+  as.factor(hk_geb)4:as.factor(bak)6 as.factor(hk_geb)5:as.factor(bak)6 as.factor(hk_geb)6:as.factor(bak)6 as.factor(hk_geb)7:as.factor(bak)6 as.factor(hk_geb)8:as.factor(bak)6 as.factor(hk_geb)9:as.factor(bak)6
+2                          4.1112047                          4.5402669                          4.1917884                          4.2246443                          4.1932490                          4.0939820
+3                          0.3580297                          0.3017794                          0.3500446                          0.5271687                          0.2337032                          0.3477143
+  as.factor(hk_geb)10:as.factor(bak)6 as.factor(hk_geb)11:as.factor(bak)6 as.factor(hk_geb)1:as.factor(bak)7 as.factor(hk_geb)2:as.factor(bak)7 as.factor(hk_geb)3:as.factor(bak)7
+2                         0.001055282                        1.235224e-04                          4.2882640                           2.978273                           4.414119
+3                         0.975263521                        7.280485e-05                          0.6662373                           2.247151                           1.092829
+  as.factor(hk_geb)4:as.factor(bak)7 as.factor(hk_geb)5:as.factor(bak)7 as.factor(hk_geb)6:as.factor(bak)7 as.factor(hk_geb)7:as.factor(bak)7 as.factor(hk_geb)8:as.factor(bak)7 as.factor(hk_geb)9:as.factor(bak)7
+2                           4.280101                           4.287010                          4.2560215                           4.400943                          4.2243962                           4.337011
+3                           0.685121                           0.789123                          0.6614914                           0.643082                          0.3251421                           0.796912
+  as.factor(hk_geb)10:as.factor(bak)7 as.factor(hk_geb)11:as.factor(bak)7 as.factor(hk_geb)1:as.factor(bak)8 as.factor(hk_geb)2:as.factor(bak)8 as.factor(hk_geb)3:as.factor(bak)8
+2                            2.139120                        7.075514e-06                          4.0908011                           1.812715                          4.2920836
+3                            2.189589                        1.282886e-08                          0.3051917                           1.633503                          0.6490662
+  as.factor(hk_geb)4:as.factor(bak)8 as.factor(hk_geb)5:as.factor(bak)8 as.factor(hk_geb)6:as.factor(bak)8 as.factor(hk_geb)7:as.factor(bak)8 as.factor(hk_geb)8:as.factor(bak)8 as.factor(hk_geb)9:as.factor(bak)8
+2                           4.618975                       6.221320e-06                          4.1749591                          4.3867031                          4.0941722                          4.1111462
+3                           0.541706                       4.927736e-01                          0.3854803                          0.3534835                          0.2435595                          0.3199322
+  as.factor(hk_geb)10:as.factor(bak)8 as.factor(hk_geb)11:as.factor(bak)8 as.factor(hk_geb)1:as.factor(bak)9 as.factor(hk_geb)2:as.factor(bak)9 as.factor(hk_geb)3:as.factor(bak)9
+2                        9.758499e-04                        2.616334e-04                          4.1451507                           4.672347                          4.2011009
+3                        2.638169e-05                        6.599097e-05                          0.4072604                           1.154072                          0.7326615
+  as.factor(hk_geb)4:as.factor(bak)9 as.factor(hk_geb)5:as.factor(bak)9 as.factor(hk_geb)6:as.factor(bak)9 as.factor(hk_geb)7:as.factor(bak)9 as.factor(hk_geb)8:as.factor(bak)9 as.factor(hk_geb)9:as.factor(bak)9
+2                          4.2841731                          4.3613859                          4.8328322                          4.1383518                          4.0893777                          4.3051738
+3                          0.7807194                          0.5680722                          0.6133146                          0.5508881                          0.2517952                          0.4025853
+  as.factor(hk_geb)10:as.factor(bak)9 as.factor(hk_geb)11:as.factor(bak)9 as.factor(hk_geb)1:as.factor(bak)10 as.factor(hk_geb)2:as.factor(bak)10 as.factor(hk_geb)3:as.factor(bak)10
+2                        4.155037e-07                        3.171097e-02                           4.1643769                           4.3396828                            4.400449
+3                        3.521305e-01                        2.608221e-05                           0.2890836                           0.8875234                            0.590922
+  as.factor(hk_geb)4:as.factor(bak)10 as.factor(hk_geb)5:as.factor(bak)10 as.factor(hk_geb)6:as.factor(bak)10 as.factor(hk_geb)7:as.factor(bak)10 as.factor(hk_geb)8:as.factor(bak)10
+2                           4.2360544                           4.2964180                           4.8502212                           4.3358638                           4.0887149
+3                           0.5857715                           0.7599231                           0.9372318                           0.4838756                           0.3028716
+  as.factor(hk_geb)9:as.factor(bak)10 as.factor(hk_geb)10:as.factor(bak)10 as.factor(hk_geb)11:as.factor(bak)10 as.factor(hk_geb)1:as.factor(bak)11 as.factor(hk_geb)2:as.factor(bak)11
+2                           4.1007328                         6.435126e-07                             2.262882                            4.540866                            4.762237
+3                           0.3382626                         2.185524e-06                             2.262925                            0.638265                            1.684391
+  as.factor(hk_geb)3:as.factor(bak)11 as.factor(hk_geb)4:as.factor(bak)11 as.factor(hk_geb)5:as.factor(bak)11 as.factor(hk_geb)6:as.factor(bak)11 as.factor(hk_geb)7:as.factor(bak)11
+2                           4.4186610                           4.2154082                           4.3632601                          249.269210                            4.807893
+3                           0.6794021                           0.7014404                           0.8992282                            2.262626                            1.744846
+  as.factor(hk_geb)8:as.factor(bak)11 as.factor(hk_geb)9:as.factor(bak)11 as.factor(hk_geb)10:as.factor(bak)11 as.factor(hk_geb)11:as.factor(bak)11 as.factor(hk_geb)1:as.factor(bak)12
+2                            4.389802                         0.002312995                         2.7009370749                         3.466519e-03                        4.273228e+00
+3                            0.532451                         0.803305190                         0.0009763374                         1.749412e-05                        6.922547e-05
+  as.factor(hk_geb)2:as.factor(bak)12 as.factor(hk_geb)3:as.factor(bak)12 as.factor(hk_geb)4:as.factor(bak)12 as.factor(hk_geb)5:as.factor(bak)12 as.factor(hk_geb)6:as.factor(bak)12
+2                         0.001494842                           0.0217653                            1.156907                        6.439790e-02                            92.49619
+3                         0.010711759                           2.3355497                            1.498875                        3.673884e-05                             4.50590
+  as.factor(hk_geb)7:as.factor(bak)12 as.factor(hk_geb)8:as.factor(bak)12 as.factor(hk_geb)9:as.factor(bak)12 as.factor(hk_geb)10:as.factor(bak)12 as.factor(hk_geb)11:as.factor(bak)12
+2                            4.735443                          0.02936445                           0.2873529                                  NaN                         4.911967e-10
+3                            1.666122                          2.22144205                           1.3478893                                    0                         0.000000e+00
+
+Residual Deviance: 5005.065 
+AIC: 5517.065 

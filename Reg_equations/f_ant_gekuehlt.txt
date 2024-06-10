@@ -1,0 +1,142 @@
+[1] "Also the regression equation contains NAs, it has been used for the imputation, as these combinations do not exist in the DataNWG BRE data and therfore do not affect the prediction"
+[1] "Damit die Zuweisung der KÃ¤lteanlagen passt, muss hier nur im Fall f_ant_gekuehlt==-7 & qi1==3 imputiert werden"
+
+Call:
+lm(formula = f_ant_gekuehlt ~ as.factor(bak):as.factor(hk_geb), 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-88.417 -13.507  -0.608  12.305  75.156 
+
+Coefficients: (30 not defined because of singularities)
+                                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            93.688     13.240   7.076 6.85e-12 ***
+as.factor(bak)1:as.factor(hk_geb)1    -74.151     19.727  -3.759 0.000197 ***
+as.factor(bak)2:as.factor(hk_geb)1    -47.731     13.762  -3.468 0.000582 ***
+as.factor(bak)3:as.factor(hk_geb)1    -67.554     19.210  -3.517 0.000488 ***
+as.factor(bak)4:as.factor(hk_geb)1    -61.052     16.192  -3.770 0.000188 ***
+as.factor(bak)5:as.factor(hk_geb)1    -56.476     16.102  -3.507 0.000505 ***
+as.factor(bak)6:as.factor(hk_geb)1    -20.503     14.470  -1.417 0.157295    
+as.factor(bak)7:as.factor(hk_geb)1    -52.603     18.463  -2.849 0.004614 ** 
+as.factor(bak)8:as.factor(hk_geb)1    -47.778     14.026  -3.406 0.000726 ***
+as.factor(bak)9:as.factor(hk_geb)1    -23.302     15.174  -1.536 0.125434    
+as.factor(bak)10:as.factor(hk_geb)1   -63.720     13.862  -4.597 5.80e-06 ***
+as.factor(bak)11:as.factor(hk_geb)1   -52.962     18.463  -2.869 0.004345 ** 
+as.factor(bak)12:as.factor(hk_geb)1   -90.688     14.529  -6.242 1.12e-09 ***
+as.factor(bak)1:as.factor(hk_geb)2    -88.688     38.624  -2.296 0.022191 *  
+as.factor(bak)2:as.factor(hk_geb)2    -85.688     60.542  -1.415 0.157761    
+as.factor(bak)3:as.factor(hk_geb)2    -53.688     73.082  -0.735 0.463006    
+as.factor(bak)4:as.factor(hk_geb)2    -20.755     29.131  -0.712 0.476604    
+as.factor(bak)5:as.factor(hk_geb)2    -63.688     39.374  -1.618 0.106569    
+as.factor(bak)6:as.factor(hk_geb)2    -40.623     24.516  -1.657 0.098316 .  
+as.factor(bak)7:as.factor(hk_geb)2    -68.767     34.989  -1.965 0.050071 .  
+as.factor(bak)8:as.factor(hk_geb)2    -52.980     24.426  -2.169 0.030679 *  
+as.factor(bak)9:as.factor(hk_geb)2    -78.893     31.912  -2.472 0.013852 *  
+as.factor(bak)10:as.factor(hk_geb)2   -23.844     20.290  -1.175 0.240633    
+as.factor(bak)11:as.factor(hk_geb)2   -49.180     23.513  -2.092 0.037118 *  
+as.factor(bak)12:as.factor(hk_geb)2   -21.667     66.951  -0.324 0.746391    
+as.factor(bak)1:as.factor(hk_geb)3         NA         NA      NA       NA    
+as.factor(bak)2:as.factor(hk_geb)3    -75.762     32.759  -2.313 0.021256 *  
+as.factor(bak)3:as.factor(hk_geb)3         NA         NA      NA       NA    
+as.factor(bak)4:as.factor(hk_geb)3    -62.711     24.081  -2.604 0.009560 ** 
+as.factor(bak)5:as.factor(hk_geb)3    -71.196     21.904  -3.250 0.001252 ** 
+as.factor(bak)6:as.factor(hk_geb)3    -78.518     18.397  -4.268 2.48e-05 ***
+as.factor(bak)7:as.factor(hk_geb)3    -83.688     50.303  -1.664 0.096973 .  
+as.factor(bak)8:as.factor(hk_geb)3    -75.783     22.250  -3.406 0.000727 ***
+as.factor(bak)9:as.factor(hk_geb)3    -48.244     18.523  -2.604 0.009550 ** 
+as.factor(bak)10:as.factor(hk_geb)3   -37.900     20.784  -1.824 0.068983 .  
+as.factor(bak)11:as.factor(hk_geb)3   -59.437     28.774  -2.066 0.039517 *  
+as.factor(bak)12:as.factor(hk_geb)3        NA         NA      NA       NA    
+as.factor(bak)1:as.factor(hk_geb)4         NA         NA      NA       NA    
+as.factor(bak)2:as.factor(hk_geb)4         NA         NA      NA       NA    
+as.factor(bak)3:as.factor(hk_geb)4         NA         NA      NA       NA    
+as.factor(bak)4:as.factor(hk_geb)4    -43.688     39.034  -1.119 0.263733    
+as.factor(bak)5:as.factor(hk_geb)4    -91.688    128.083  -0.716 0.474510    
+as.factor(bak)6:as.factor(hk_geb)4    -46.292     29.054  -1.593 0.111890    
+as.factor(bak)7:as.factor(hk_geb)4         NA         NA      NA       NA    
+as.factor(bak)8:as.factor(hk_geb)4    -59.865     37.710  -1.588 0.113202    
+as.factor(bak)9:as.factor(hk_geb)4    -61.511     29.366  -2.095 0.036840 *  
+as.factor(bak)10:as.factor(hk_geb)4   -86.075     40.743  -2.113 0.035264 *  
+as.factor(bak)11:as.factor(hk_geb)4        NA         NA      NA       NA    
+as.factor(bak)12:as.factor(hk_geb)4   -84.688    103.328  -0.820 0.412940    
+as.factor(bak)1:as.factor(hk_geb)5    -56.191     28.276  -1.987 0.047590 *  
+as.factor(bak)2:as.factor(hk_geb)5    -21.699     26.103  -0.831 0.406319    
+as.factor(bak)3:as.factor(hk_geb)5    -23.688     47.577  -0.498 0.618848    
+as.factor(bak)4:as.factor(hk_geb)5         NA         NA      NA       NA    
+as.factor(bak)5:as.factor(hk_geb)5    -44.005     28.938  -1.521 0.129156    
+as.factor(bak)6:as.factor(hk_geb)5    -36.269     14.187  -2.556 0.010951 *  
+as.factor(bak)7:as.factor(hk_geb)5         NA         NA      NA       NA    
+as.factor(bak)8:as.factor(hk_geb)5    -62.353     26.949  -2.314 0.021198 *  
+as.factor(bak)9:as.factor(hk_geb)5    -63.824     23.287  -2.741 0.006411 ** 
+as.factor(bak)10:as.factor(hk_geb)5   -25.764     24.543  -1.050 0.294488    
+as.factor(bak)11:as.factor(hk_geb)5     6.312     48.123   0.131 0.895710    
+as.factor(bak)12:as.factor(hk_geb)5        NA         NA      NA       NA    
+as.factor(bak)1:as.factor(hk_geb)6         NA         NA      NA       NA    
+as.factor(bak)2:as.factor(hk_geb)6         NA         NA      NA       NA    
+as.factor(bak)3:as.factor(hk_geb)6         NA         NA      NA       NA    
+as.factor(bak)4:as.factor(hk_geb)6    -92.688     92.793  -0.999 0.318476    
+as.factor(bak)5:as.factor(hk_geb)6    -88.688     35.788  -2.478 0.013626 *  
+as.factor(bak)6:as.factor(hk_geb)6    -63.486     23.034  -2.756 0.006119 ** 
+as.factor(bak)7:as.factor(hk_geb)6    -43.688     35.773  -1.221 0.222722    
+as.factor(bak)8:as.factor(hk_geb)6    -36.178     30.355  -1.192 0.234045    
+as.factor(bak)9:as.factor(hk_geb)6    -88.688     18.698  -4.743 2.95e-06 ***
+as.factor(bak)10:as.factor(hk_geb)6   -65.868     33.120  -1.989 0.047421 *  
+as.factor(bak)11:as.factor(hk_geb)6        NA         NA      NA       NA    
+as.factor(bak)12:as.factor(hk_geb)6        NA         NA      NA       NA    
+as.factor(bak)1:as.factor(hk_geb)7    -86.713     14.039  -6.177 1.64e-09 ***
+as.factor(bak)2:as.factor(hk_geb)7    -70.786     17.081  -4.144 4.18e-05 ***
+as.factor(bak)3:as.factor(hk_geb)7    -86.479     21.133  -4.092 5.19e-05 ***
+as.factor(bak)4:as.factor(hk_geb)7    -81.548     23.948  -3.405 0.000729 ***
+as.factor(bak)5:as.factor(hk_geb)7         NA         NA      NA       NA    
+as.factor(bak)6:as.factor(hk_geb)7    -66.226     26.906  -2.461 0.014271 *  
+as.factor(bak)7:as.factor(hk_geb)7    -71.418     25.420  -2.810 0.005209 ** 
+as.factor(bak)8:as.factor(hk_geb)7    -28.544     15.449  -1.848 0.065401 .  
+as.factor(bak)9:as.factor(hk_geb)7    -23.854     14.749  -1.617 0.106611    
+as.factor(bak)10:as.factor(hk_geb)7   -45.521     19.722  -2.308 0.021506 *  
+as.factor(bak)11:as.factor(hk_geb)7    -3.323     27.556  -0.121 0.904089    
+as.factor(bak)12:as.factor(hk_geb)7     3.950     21.629   0.183 0.855185    
+as.factor(bak)1:as.factor(hk_geb)8    -18.688     14.123  -1.323 0.186544    
+as.factor(bak)2:as.factor(hk_geb)8    -83.688     37.635  -2.224 0.026740 *  
+as.factor(bak)3:as.factor(hk_geb)8    -60.688     42.337  -1.433 0.152525    
+as.factor(bak)4:as.factor(hk_geb)8    -63.303     14.140  -4.477 9.94e-06 ***
+as.factor(bak)5:as.factor(hk_geb)8    -71.812     15.077  -4.763 2.69e-06 ***
+as.factor(bak)6:as.factor(hk_geb)8    -65.404     14.631  -4.470 1.02e-05 ***
+as.factor(bak)7:as.factor(hk_geb)8    -59.980     16.600  -3.613 0.000342 ***
+as.factor(bak)8:as.factor(hk_geb)8    -79.241     13.694  -5.787 1.47e-08 ***
+as.factor(bak)9:as.factor(hk_geb)8    -43.085     14.439  -2.984 0.003023 ** 
+as.factor(bak)10:as.factor(hk_geb)8   -44.451     15.918  -2.792 0.005486 ** 
+as.factor(bak)11:as.factor(hk_geb)8   -50.907     23.330  -2.182 0.029696 *  
+as.factor(bak)12:as.factor(hk_geb)8        NA         NA      NA       NA    
+as.factor(bak)1:as.factor(hk_geb)9         NA         NA      NA       NA    
+as.factor(bak)2:as.factor(hk_geb)9         NA         NA      NA       NA    
+as.factor(bak)3:as.factor(hk_geb)9    -72.502     15.735  -4.608 5.51e-06 ***
+as.factor(bak)4:as.factor(hk_geb)9    -55.709     22.163  -2.514 0.012350 *  
+as.factor(bak)5:as.factor(hk_geb)9    -72.677     21.537  -3.375 0.000813 ***
+as.factor(bak)6:as.factor(hk_geb)9    -23.568     19.856  -1.187 0.235957    
+as.factor(bak)7:as.factor(hk_geb)9    -42.800     18.487  -2.315 0.021122 *  
+as.factor(bak)8:as.factor(hk_geb)9    -46.665     15.081  -3.094 0.002114 ** 
+as.factor(bak)9:as.factor(hk_geb)9    -37.729     15.768  -2.393 0.017191 *  
+as.factor(bak)10:as.factor(hk_geb)9   -18.652     17.278  -1.079 0.281032    
+as.factor(bak)11:as.factor(hk_geb)9   -48.098     19.106  -2.517 0.012218 *  
+as.factor(bak)12:as.factor(hk_geb)9    -5.688     26.970  -0.211 0.833078    
+as.factor(bak)1:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)2:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)3:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)4:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)5:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)6:as.factor(hk_geb)10   -83.688     23.071  -3.627 0.000324 ***
+as.factor(bak)7:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)8:as.factor(hk_geb)10   -46.364     19.380  -2.392 0.017208 *  
+as.factor(bak)9:as.factor(hk_geb)10        NA         NA      NA       NA    
+as.factor(bak)10:as.factor(hk_geb)10       NA         NA      NA       NA    
+as.factor(bak)11:as.factor(hk_geb)10       NA         NA      NA       NA    
+as.factor(bak)12:as.factor(hk_geb)10       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 23.39 on 393 degrees of freedom
+Multiple R-squared:  0.5198,	Adjusted R-squared:  0.4098 
+F-statistic: 4.727 on 90 and 393 DF,  p-value: < 2.2e-16
+
+[1] "f_ant_gekuehlt = 93.687785 - 74.151291 * as.factor(bak)1:as.factor(hk_geb)1 - 47.730569 * as.factor(bak)2:as.factor(hk_geb)1 - 67.554166 * as.factor(bak)3:as.factor(hk_geb)1 - 61.052036 * as.factor(bak)4:as.factor(hk_geb)1 - 56.475920 * as.factor(bak)5:as.factor(hk_geb)1 - 20.502959 * as.factor(bak)6:as.factor(hk_geb)1 - 52.603055 * as.factor(bak)7:as.factor(hk_geb)1 - 47.777941 * as.factor(bak)8:as.factor(hk_geb)1 - 23.301729 * as.factor(bak)9:as.factor(hk_geb)1 - 63.720186 * as.factor(bak)10:as.factor(hk_geb)1 - 52.962481 * as.factor(bak)11:as.factor(hk_geb)1 - 90.687785 * as.factor(bak)12:as.factor(hk_geb)1 - 88.687785 * as.factor(bak)1:as.factor(hk_geb)2 - 85.687785 * as.factor(bak)2:as.factor(hk_geb)2 - 53.687785 * as.factor(bak)3:as.factor(hk_geb)2 - 20.754588 * as.factor(bak)4:as.factor(hk_geb)2 - 63.687785 * as.factor(bak)5:as.factor(hk_geb)2 - 40.622930 * as.factor(bak)6:as.factor(hk_geb)2 - 68.767354 * as.factor(bak)7:as.factor(hk_geb)2 - 52.979842 * as.factor(bak)8:as.factor(hk_geb)2 - 78.893122 * as.factor(bak)9:as.factor(hk_geb)2 - 23.844379 * as.factor(bak)10:as.factor(hk_geb)2 - 49.179685 * as.factor(bak)11:as.factor(hk_geb)2 - 21.667391 * as.factor(bak)12:as.factor(hk_geb)2NA       NA * as.factor(bak)1:as.factor(hk_geb)3 - 75.761507 * as.factor(bak)2:as.factor(hk_geb)3NA       NA * as.factor(bak)3:as.factor(hk_geb)3 - 62.711232 * as.factor(bak)4:as.factor(hk_geb)3 - 71.196452 * as.factor(bak)5:as.factor(hk_geb)3 - 78.517739 * as.factor(bak)6:as.factor(hk_geb)3 - 83.687785 * as.factor(bak)7:as.factor(hk_geb)3 - 75.782667 * as.factor(bak)8:as.factor(hk_geb)3 - 48.243674 * as.factor(bak)9:as.factor(hk_geb)3 - 37.900001 * as.factor(bak)10:as.factor(hk_geb)3 - 59.436947 * as.factor(bak)11:as.factor(hk_geb)3NA       NA * as.factor(bak)12:as.factor(hk_geb)3NA       NA * as.factor(bak)1:as.factor(hk_geb)4NA       NA * as.factor(bak)2:as.factor(hk_geb)4NA       NA * as.factor(bak)3:as.factor(hk_geb)4 - 43.687785 * as.factor(bak)4:as.factor(hk_geb)4 - 91.687785 * as.factor(bak)5:as.factor(hk_geb)4 - 46.292068 * as.factor(bak)6:as.factor(hk_geb)4NA       NA * as.factor(bak)7:as.factor(hk_geb)4 - 59.865487 * as.factor(bak)8:as.factor(hk_geb)4 - 61.511240 * as.factor(bak)9:as.factor(hk_geb)4 - 86.074656 * as.factor(bak)10:as.factor(hk_geb)4NA       NA * as.factor(bak)11:as.factor(hk_geb)4 - 84.687785 * as.factor(bak)12:as.factor(hk_geb)4 - 56.191278 * as.factor(bak)1:as.factor(hk_geb)5 - 21.698572 * as.factor(bak)2:as.factor(hk_geb)5 - 23.687785 * as.factor(bak)3:as.factor(hk_geb)5NA       NA * as.factor(bak)4:as.factor(hk_geb)5 - 44.004659 * as.factor(bak)5:as.factor(hk_geb)5 - 36.268772 * as.factor(bak)6:as.factor(hk_geb)5NA       NA * as.factor(bak)7:as.factor(hk_geb)5 - 62.353212 * as.factor(bak)8:as.factor(hk_geb)5 - 63.823670 * as.factor(bak)9:as.factor(hk_geb)5 - 25.763836 * as.factor(bak)10:as.factor(hk_geb)5 +  6.312215 * as.factor(bak)11:as.factor(hk_geb)5NA       NA * as.factor(bak)12:as.factor(hk_geb)5NA       NA * as.factor(bak)1:as.factor(hk_geb)6NA       NA * as.factor(bak)2:as.factor(hk_geb)6NA       NA * as.factor(bak)3:as.factor(hk_geb)6 - 92.687785 * as.factor(bak)4:as.factor(hk_geb)6 - 88.687785 * as.factor(bak)5:as.factor(hk_geb)6 - 63.486004 * as.factor(bak)6:as.factor(hk_geb)6 - 43.687785 * as.factor(bak)7:as.factor(hk_geb)6 - 36.178027 * as.factor(bak)8:as.factor(hk_geb)6 - 88.687785 * as.factor(bak)9:as.factor(hk_geb)6 - 65.868164 * as.factor(bak)10:as.factor(hk_geb)6NA       NA * as.factor(bak)11:as.factor(hk_geb)6NA       NA * as.factor(bak)12:as.factor(hk_geb)6 - 86.713275 * as.factor(bak)1:as.factor(hk_geb)7 - 70.786348 * as.factor(bak)2:as.factor(hk_geb)7 - 86.479332 * as.factor(bak)3:as.factor(hk_geb)7 - 81.547851 * as.factor(bak)4:as.factor(hk_geb)7NA       NA * as.factor(bak)5:as.factor(hk_geb)7 - 66.225772 * as.factor(bak)6:as.factor(hk_geb)7 - 71.418321 * as.factor(bak)7:as.factor(hk_geb)7 - 28.544092 * as.factor(bak)8:as.factor(hk_geb)7 - 23.853936 * as.factor(bak)9:as.factor(hk_geb)7 - 45.521487 * as.factor(bak)10:as.factor(hk_geb)7 -  3.322603 * as.factor(bak)11:as.factor(hk_geb)7 +  3.949994 * as.factor(bak)12:as.factor(hk_geb)7 - 18.687785 * as.factor(bak)1:as.factor(hk_geb)8 - 83.687785 * as.factor(bak)2:as.factor(hk_geb)8 - 60.687785 * as.factor(bak)3:as.factor(hk_geb)8 - 63.303366 * as.factor(bak)4:as.factor(hk_geb)8 - 71.811700 * as.factor(bak)5:as.factor(hk_geb)8 - 65.404487 * as.factor(bak)6:as.factor(hk_geb)8 - 59.980226 * as.factor(bak)7:as.factor(hk_geb)8 - 79.241422 * as.factor(bak)8:as.factor(hk_geb)8 - 43.085433 * as.factor(bak)9:as.factor(hk_geb)8 - 44.450776 * as.factor(bak)10:as.factor(hk_geb)8 - 50.906727 * as.factor(bak)11:as.factor(hk_geb)8NA       NA * as.factor(bak)12:as.factor(hk_geb)8NA       NA * as.factor(bak)1:as.factor(hk_geb)9NA       NA * as.factor(bak)2:as.factor(hk_geb)9 - 72.501900 * as.factor(bak)3:as.factor(hk_geb)9 - 55.708768 * as.factor(bak)4:as.factor(hk_geb)9 - 72.676768 * as.factor(bak)5:as.factor(hk_geb)9 - 23.568301 * as.factor(bak)6:as.factor(hk_geb)9 - 42.799500 * as.factor(bak)7:as.factor(hk_geb)9 - 46.665122 * as.factor(bak)8:as.factor(hk_geb)9 - 37.729498 * as.factor(bak)9:as.factor(hk_geb)9 - 18.651727 * as.factor(bak)10:as.factor(hk_geb)9 - 48.098183 * as.factor(bak)11:as.factor(hk_geb)9 -  5.687785 * as.factor(bak)12:as.factor(hk_geb)9NA       NA * as.factor(bak)1:as.factor(hk_geb)10NA       NA * as.factor(bak)2:as.factor(hk_geb)10NA       NA * as.factor(bak)3:as.factor(hk_geb)10NA       NA * as.factor(bak)4:as.factor(hk_geb)10NA       NA * as.factor(bak)5:as.factor(hk_geb)10 - 83.687785 * as.factor(bak)6:as.factor(hk_geb)10NA       NA * as.factor(bak)7:as.factor(hk_geb)10 - 46.363961 * as.factor(bak)8:as.factor(hk_geb)10NA       NA * as.factor(bak)9:as.factor(hk_geb)10NA       NA * as.factor(bak)10:as.factor(hk_geb)10NA       NA * as.factor(bak)11:as.factor(hk_geb)10NA       NA * as.factor(bak)12:as.factor(hk_geb)10"

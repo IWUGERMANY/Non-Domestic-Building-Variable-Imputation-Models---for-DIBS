@@ -1,0 +1,63 @@
+
+Call:
+lm(formula = d_fl_wueoa ~ as.factor(hk_geb) * as.factor(dachform_be) * 
+    geb_flaeche, weights = (HRF/Sum_HRF_BE_clean) * N_Clean)
+
+Weighted Residuals:
+     Min       1Q   Median       3Q      Max 
+-1003.05    -4.76     0.00     0.00  1638.04 
+
+Coefficients:
+                                                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                              11.978030   2.374542   5.044 4.71e-07 ***
+as.factor(hk_geb)2                                       -6.893786  11.844192  -0.582 0.560566    
+as.factor(hk_geb)3                                        3.289576   6.317098   0.521 0.602570    
+as.factor(hk_geb)4                                        2.498991   5.218772   0.479 0.632069    
+as.factor(hk_geb)5                                      -15.201611   5.032089  -3.021 0.002533 ** 
+as.factor(hk_geb)6                                      -53.759882   7.952051  -6.761 1.53e-11 ***
+as.factor(hk_geb)7                                       -9.961170   3.609499  -2.760 0.005806 ** 
+as.factor(hk_geb)8                                      -24.470945   3.012991  -8.122 5.73e-16 ***
+as.factor(hk_geb)9                                        0.873731   5.135915   0.170 0.864921    
+as.factor(hk_geb)10                                     -22.303425  11.476351  -1.943 0.052021 .  
+as.factor(hk_geb)11                                      18.387905  12.166042   1.511 0.130746    
+as.factor(dachform_be)2                                 -11.978027   3.944469  -3.037 0.002404 ** 
+geb_flaeche                                               1.020048   0.001309 779.230  < 2e-16 ***
+as.factor(hk_geb)2:as.factor(dachform_be)2                6.893811  15.549848   0.443 0.657542    
+as.factor(hk_geb)3:as.factor(dachform_be)2               -3.289588  10.765528  -0.306 0.759947    
+as.factor(hk_geb)4:as.factor(dachform_be)2               -2.498986   7.255972  -0.344 0.730557    
+as.factor(hk_geb)5:as.factor(dachform_be)2               15.201616   7.490990   2.029 0.042478 *  
+as.factor(hk_geb)6:as.factor(dachform_be)2               53.759885  10.856207   4.952 7.59e-07 ***
+as.factor(hk_geb)7:as.factor(dachform_be)2                9.961176   6.393403   1.558 0.119287    
+as.factor(hk_geb)8:as.factor(dachform_be)2               24.470943   4.720914   5.184 2.26e-07 ***
+as.factor(hk_geb)9:as.factor(dachform_be)2               -0.873752   6.726274  -0.130 0.896650    
+as.factor(hk_geb)10:as.factor(dachform_be)2              22.303436  13.627124   1.637 0.101757    
+as.factor(hk_geb)11:as.factor(dachform_be)2             -18.387945  22.476716  -0.818 0.413345    
+as.factor(hk_geb)2:geb_flaeche                            0.010116   0.007094   1.426 0.153910    
+as.factor(hk_geb)3:geb_flaeche                            0.001909   0.006151   0.310 0.756294    
+as.factor(hk_geb)4:geb_flaeche                            0.004956   0.005054   0.981 0.326803    
+as.factor(hk_geb)5:geb_flaeche                            0.020790   0.006290   3.305 0.000956 ***
+as.factor(hk_geb)6:geb_flaeche                            0.088256   0.006219  14.192  < 2e-16 ***
+as.factor(hk_geb)7:geb_flaeche                            0.045686   0.006780   6.739 1.78e-11 ***
+as.factor(hk_geb)8:geb_flaeche                            0.044267   0.001934  22.888  < 2e-16 ***
+as.factor(hk_geb)9:geb_flaeche                            0.014770   0.005133   2.877 0.004027 ** 
+as.factor(hk_geb)10:geb_flaeche                           0.036196   0.038848   0.932 0.351514    
+as.factor(hk_geb)11:geb_flaeche                          -0.041746   0.012738  -3.277 0.001056 ** 
+as.factor(dachform_be)2:geb_flaeche                      -0.020048   0.002712  -7.392 1.69e-13 ***
+as.factor(hk_geb)2:as.factor(dachform_be)2:geb_flaeche   -0.010116   0.009007  -1.123 0.261420    
+as.factor(hk_geb)3:as.factor(dachform_be)2:geb_flaeche   -0.001909   0.007225  -0.264 0.791614    
+as.factor(hk_geb)4:as.factor(dachform_be)2:geb_flaeche   -0.004956   0.006026  -0.822 0.410844    
+as.factor(hk_geb)5:as.factor(dachform_be)2:geb_flaeche   -0.020790   0.008653  -2.403 0.016316 *  
+as.factor(hk_geb)6:as.factor(dachform_be)2:geb_flaeche   -0.088256   0.007766 -11.365  < 2e-16 ***
+as.factor(hk_geb)7:as.factor(dachform_be)2:geb_flaeche   -0.045686   0.010389  -4.398 1.12e-05 ***
+as.factor(hk_geb)8:as.factor(dachform_be)2:geb_flaeche   -0.044267   0.003114 -14.215  < 2e-16 ***
+as.factor(hk_geb)9:as.factor(dachform_be)2:geb_flaeche   -0.014770   0.005671  -2.604 0.009231 ** 
+as.factor(hk_geb)10:as.factor(dachform_be)2:geb_flaeche  -0.036196   0.041780  -0.866 0.386340    
+as.factor(hk_geb)11:as.factor(dachform_be)2:geb_flaeche   0.041746   0.029324   1.424 0.154617    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 47.64 on 5025 degrees of freedom
+Multiple R-squared:  0.9996,	Adjusted R-squared:  0.9996 
+F-statistic: 2.818e+05 on 43 and 5025 DF,  p-value: < 2.2e-16
+
+[1] "d_fl_wueoa = 11.978030049 -  6.893785698 * as.factor(hk_geb)2 +  3.289576317 * as.factor(hk_geb)3 +  2.498990894 * as.factor(hk_geb)4 - 15.201611182 * as.factor(hk_geb)5 - 53.759882494 * as.factor(hk_geb)6 -  9.961169604 * as.factor(hk_geb)7 - 24.470944575 * as.factor(hk_geb)8 +  0.873731113 * as.factor(hk_geb)9 - 22.303424927 * as.factor(hk_geb)10 + 18.387905214 * as.factor(hk_geb)11 - 11.978027322 * as.factor(dachform_be)2 +  1.020048233 * geb_flaeche +  6.893811464 * as.factor(hk_geb)2:as.factor(dachform_be)2 -  3.289588451 * as.factor(hk_geb)3:as.factor(dachform_be)2 -  2.498985654 * as.factor(hk_geb)4:as.factor(dachform_be)2 + 15.201615931 * as.factor(hk_geb)5:as.factor(dachform_be)2 + 53.759885086 * as.factor(hk_geb)6:as.factor(dachform_be)2 +  9.961176486 * as.factor(hk_geb)7:as.factor(dachform_be)2 + 24.470942991 * as.factor(hk_geb)8:as.factor(dachform_be)2 -  0.873752375 * as.factor(hk_geb)9:as.factor(dachform_be)2 + 22.303436196 * as.factor(hk_geb)10:as.factor(dachform_be)2 - 18.387944882 * as.factor(hk_geb)11:as.factor(dachform_be)2 +  0.010116397 * as.factor(hk_geb)2:geb_flaeche +  0.001908999 * as.factor(hk_geb)3:geb_flaeche +  0.004956165 * as.factor(hk_geb)4:geb_flaeche +  0.020790264 * as.factor(hk_geb)5:geb_flaeche +  0.088256247 * as.factor(hk_geb)6:geb_flaeche +  0.045686377 * as.factor(hk_geb)7:geb_flaeche +  0.044267223 * as.factor(hk_geb)8:geb_flaeche +  0.014769731 * as.factor(hk_geb)9:geb_flaeche +  0.036196430 * as.factor(hk_geb)10:geb_flaeche -  0.041746283 * as.factor(hk_geb)11:geb_flaeche -  0.020048234 * as.factor(dachform_be)2:geb_flaeche -  0.010116402 * as.factor(hk_geb)2:as.factor(dachform_be)2:geb_flaeche -  0.001908997 * as.factor(hk_geb)3:as.factor(dachform_be)2:geb_flaeche -  0.004956165 * as.factor(hk_geb)4:as.factor(dachform_be)2:geb_flaeche -  0.020790262 * as.factor(hk_geb)5:as.factor(dachform_be)2:geb_flaeche -  0.088256244 * as.factor(hk_geb)6:as.factor(dachform_be)2:geb_flaeche -  0.045686381 * as.factor(hk_geb)7:as.factor(dachform_be)2:geb_flaeche -  0.044267222 * as.factor(hk_geb)8:as.factor(dachform_be)2:geb_flaeche -  0.014769729 * as.factor(hk_geb)9:as.factor(dachform_be)2:geb_flaeche -  0.036196440 * as.factor(hk_geb)10:as.factor(dachform_be)2:geb_flaeche +  0.041746296 * as.factor(hk_geb)11:as.factor(dachform_be)2:geb_flaeche"

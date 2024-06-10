@@ -1,0 +1,212 @@
+
+Call:
+lm(formula = u_aw ~ as.factor(bak_grob) * aw_flantgedges * aw_daemm_staerke_1 * 
+    as.factor(aw_konstr_1), weights = (HRF/Sum_HRF_BE_clean) * 
+    N_Clean)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.7758 -0.0560  0.0021  0.0766  1.8539 
+
+Coefficients: (50 not defined because of singularities)
+                                                                                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                                                        1.488e+00  9.775e-02  15.221  < 2e-16 ***
+as.factor(bak_grob)2                                                              -5.017e-01  2.105e+00  -0.238  0.81160    
+as.factor(bak_grob)3                                                               1.030e+00  6.612e+00   0.156  0.87626    
+aw_flantgedges                                                                    -1.915e-02  1.362e-02  -1.406  0.15970    
+aw_daemm_staerke_1                                                                -8.492e-02  1.721e-01  -0.493  0.62180    
+as.factor(aw_konstr_1)1.1                                                         -1.948e-01  9.865e-02  -1.975  0.04836 *  
+as.factor(aw_konstr_1)1.11                                                        -6.128e-01  2.495e-01  -2.457  0.01406 *  
+as.factor(aw_konstr_1)1.2                                                          9.493e-02  9.791e-02   0.970  0.33230    
+as.factor(aw_konstr_1)1.3                                                         -2.830e-01  9.880e-02  -2.864  0.00420 ** 
+as.factor(aw_konstr_1)1.4                                                         -3.047e-01  1.178e-01  -2.586  0.00973 ** 
+as.factor(aw_konstr_1)1.5                                                         -6.866e-01  1.032e-01  -6.653 3.23e-11 ***
+as.factor(aw_konstr_1)2                                                           -4.879e-01  2.563e-01  -1.904  0.05699 .  
+as.factor(aw_konstr_1)2.1                                                         -6.503e-02  1.189e-01  -0.547  0.58435    
+as.factor(aw_konstr_1)2.2                                                         -9.591e-01  1.005e-01  -9.542  < 2e-16 ***
+as.factor(aw_konstr_1)2.3                                                          2.648e-01  1.018e-01   2.602  0.00930 ** 
+as.factor(aw_konstr_1)3                                                            7.314e-01  2.549e+00   0.287  0.77413    
+as.factor(aw_konstr_1)3.1                                                          6.957e-01  1.222e-01   5.695 1.32e-08 ***
+as.factor(aw_konstr_1)3.2                                                         -2.680e-01  8.231e-01  -0.326  0.74478    
+as.factor(aw_konstr_1)3.3                                                          6.449e-01  1.514e-01   4.260 2.09e-05 ***
+as.factor(aw_konstr_1)3.4                                                          8.167e-01  8.739e-01   0.935  0.35007    
+as.factor(bak_grob)2:aw_flantgedges                                                9.134e-03  4.228e-02   0.216  0.82896    
+as.factor(bak_grob)3:aw_flantgedges                                               -6.605e-02  2.532e-01  -0.261  0.79418    
+as.factor(bak_grob)2:aw_daemm_staerke_1                                            2.440e-02  1.277e-01   0.191  0.84849    
+as.factor(bak_grob)3:aw_daemm_staerke_1                                            6.991e-02  3.719e-02   1.880  0.06022 .  
+aw_flantgedges:aw_daemm_staerke_1                                                  1.413e-03  3.456e-03   0.409  0.68267    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)1.1                                    -1.909e-01  2.105e+00  -0.091  0.92772    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)1.1                                    -2.023e+00  6.613e+00  -0.306  0.75973    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)1.11                                    2.376e-01  2.126e+00   0.112  0.91099    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)1.11                                   -1.550e+00  6.641e+00  -0.233  0.81544    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)1.2                                    -5.387e-01  2.105e+00  -0.256  0.79799    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)1.2                                    -2.314e+00  6.612e+00  -0.350  0.72639    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)1.3                                    -2.202e-01  2.105e+00  -0.105  0.91668    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)1.3                                    -2.034e+00  6.614e+00  -0.307  0.75851    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)1.4                                    -9.667e-02  2.106e+00  -0.046  0.96339    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)1.4                                    -1.818e+00  6.788e+00  -0.268  0.78887    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)1.5                                     3.753e-01  2.105e+00   0.178  0.85852    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)1.5                                    -1.531e+00  6.623e+00  -0.231  0.81719    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)2                                       2.780e-01  2.136e+00   0.130  0.89649    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)2                                              NA         NA      NA       NA    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)2.1                                    -3.544e-01  2.106e+00  -0.168  0.86637    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)2.1                                    -2.152e+00  6.613e+00  -0.325  0.74488    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)2.2                                     3.735e-01  2.105e+00   0.177  0.85916    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)2.2                                    -1.358e+00  6.612e+00  -0.205  0.83727    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)2.3                                            NA         NA      NA       NA    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)2.3                                            NA         NA      NA       NA    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)3                                      -1.766e-02  9.917e-01  -0.018  0.98579    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)3                                              NA         NA      NA       NA    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)3.1                                    -5.596e-01  2.107e+00  -0.266  0.79059    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)3.1                                    -2.716e+00  6.555e+00  -0.414  0.67866    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)3.2                                    -1.826e-02  1.465e+00  -0.012  0.99006    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)3.2                                            NA         NA      NA       NA    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)3.3                                    -7.735e-01  2.086e+00  -0.371  0.71075    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)3.3                                    -2.537e+00  5.556e+00  -0.457  0.64794    
+as.factor(bak_grob)2:as.factor(aw_konstr_1)3.4                                            NA         NA      NA       NA    
+as.factor(bak_grob)3:as.factor(aw_konstr_1)3.4                                            NA         NA      NA       NA    
+aw_flantgedges:as.factor(aw_konstr_1)1.1                                           9.937e-03  1.374e-02   0.723  0.46957    
+aw_flantgedges:as.factor(aw_konstr_1)1.11                                          1.471e-02  1.543e-02   0.953  0.34059    
+aw_flantgedges:as.factor(aw_konstr_1)1.2                                           3.966e-03  1.362e-02   0.291  0.77098    
+aw_flantgedges:as.factor(aw_konstr_1)1.3                                           1.173e-02  1.368e-02   0.858  0.39112    
+aw_flantgedges:as.factor(aw_konstr_1)1.4                                           9.814e-03  1.380e-02   0.711  0.47703    
+aw_flantgedges:as.factor(aw_konstr_1)1.5                                           1.892e-02  1.374e-02   1.376  0.16881    
+aw_flantgedges:as.factor(aw_konstr_1)2                                             7.654e-03  4.154e-02   0.184  0.85382    
+aw_flantgedges:as.factor(aw_konstr_1)2.1                                           1.165e-02  1.384e-02   0.842  0.40005    
+aw_flantgedges:as.factor(aw_konstr_1)2.2                                           2.368e-02  1.403e-02   1.688  0.09155 .  
+aw_flantgedges:as.factor(aw_konstr_1)2.3                                           4.499e-03  1.375e-02   0.327  0.74354    
+aw_flantgedges:as.factor(aw_konstr_1)3                                            -8.666e-03  7.778e-02  -0.111  0.91129    
+aw_flantgedges:as.factor(aw_konstr_1)3.1                                          -1.358e-02  1.459e-02  -0.931  0.35190    
+aw_flantgedges:as.factor(aw_konstr_1)3.2                                           3.161e-02  3.051e-02   1.036  0.30020    
+aw_flantgedges:as.factor(aw_konstr_1)3.3                                           5.024e-03  1.458e-02   0.344  0.73052    
+aw_flantgedges:as.factor(aw_konstr_1)3.4                                                  NA         NA      NA       NA    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1                                       7.749e-02  1.723e-01   0.450  0.65298    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11                                      9.965e-02  1.735e-01   0.574  0.56567    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2                                       5.881e-02  1.721e-01   0.342  0.73264    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3                                       6.918e-02  1.722e-01   0.402  0.68796    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4                                       5.147e-02  1.724e-01   0.299  0.76526    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5                                       6.430e-02  1.728e-01   0.372  0.70992    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)2                                         3.532e-02  2.160e-01   0.164  0.87013    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1                                       7.759e-02  1.725e-01   0.450  0.65287    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2                                       9.588e-02  1.727e-01   0.555  0.57886    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3                                       4.784e-02  1.737e-01   0.275  0.78298    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)3                                         1.101e-03  7.155e-01   0.002  0.99877    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1                                       3.061e-03  1.730e-01   0.018  0.98588    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2                                       2.907e-02  2.048e-01   0.142  0.88710    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3                                      -6.674e-03  1.750e-01  -0.038  0.96958    
+aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4                                              NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1                            -4.734e-04  1.531e-03  -0.309  0.75725    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1                            -1.493e-03  1.018e-03  -1.467  0.14239    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.1                     -2.201e-03  4.256e-02  -0.052  0.95877    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.1                      7.324e-02  2.535e-01   0.289  0.77264    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.11                    -6.145e-03  4.300e-02  -0.143  0.88637    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.11                     7.003e-02  2.536e-01   0.276  0.78248    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.2                      7.122e-03  4.228e-02   0.168  0.86625    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.2                      8.169e-02  2.532e-01   0.323  0.74697    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.3                      9.541e-04  4.230e-02   0.023  0.98201    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.3                      7.377e-02  2.532e-01   0.291  0.77077    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.4                     -6.688e-04  4.236e-02  -0.016  0.98740    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.4                      7.470e-02  2.543e-01   0.294  0.76893    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.5                     -9.136e-03  4.245e-02  -0.215  0.82961    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.5                      6.694e-02  2.533e-01   0.264  0.79155    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2                               NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2                               NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2.1                     -1.200e-03  4.235e-02  -0.028  0.97740    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2.1                      7.449e-02  2.532e-01   0.294  0.76860    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2.2                     -1.264e-02  4.245e-02  -0.298  0.76594    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2.2                      6.189e-02  2.532e-01   0.244  0.80691    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2.3                             NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2.3                             NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3                               NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3                               NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.1                      2.553e-02  4.271e-02   0.598  0.55008    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.1                      1.003e-01  2.520e-01   0.398  0.69073    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.2                             NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.2                             NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.3                      8.181e-03  4.018e-02   0.204  0.83866    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.3                             NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.4                             NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.4                             NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1                 -3.760e-02  1.324e-01  -0.284  0.77650    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1                         NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11                -6.248e-02  1.315e-01  -0.475  0.63469    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11                -9.303e-02  7.109e-02  -1.309  0.19074    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2                 -1.888e-03  1.278e-01  -0.015  0.98821    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2                 -4.847e-02  4.007e-02  -1.210  0.22642    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3                 -1.126e-02  1.282e-01  -0.088  0.92998    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3                 -5.507e-02  5.251e-02  -1.049  0.29431    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4                 -8.061e-03  1.286e-01  -0.063  0.95001    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4                 -4.643e-02  1.164e-01  -0.399  0.69006    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5                 -2.197e-02  1.299e-01  -0.169  0.86567    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5                 -5.573e-02  5.043e-02  -1.105  0.26916    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2                           NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2                           NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1                 -2.481e-02  1.283e-01  -0.193  0.84671    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1                 -6.701e-02  4.385e-02  -1.528  0.12651    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2                 -3.683e-02  1.286e-01  -0.286  0.77463    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2                 -8.368e-02  4.791e-02  -1.746  0.08080 .  
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3                         NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3                         NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3                           NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3                           NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1                  9.050e-03  1.291e-01   0.070  0.94413    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1                         NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2                         NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2                         NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3                  3.812e-02  1.171e-01   0.325  0.74487    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3                         NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4                         NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4                         NA         NA      NA       NA    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1                       -1.663e-03  3.460e-03  -0.481  0.63084    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11                      -1.956e-03  3.567e-03  -0.548  0.58342    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2                       -1.246e-03  3.456e-03  -0.361  0.71849    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3                       -1.634e-03  3.459e-03  -0.472  0.63676    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4                       -1.209e-03  3.464e-03  -0.349  0.72699    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5                       -1.482e-03  3.466e-03  -0.427  0.66905    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2                         -9.093e-04  3.865e-03  -0.235  0.81400    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1                       -1.832e-03  3.464e-03  -0.529  0.59696    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2                       -2.079e-03  3.486e-03  -0.596  0.55096    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3                       -1.273e-03  3.492e-03  -0.365  0.71544    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3                                 NA         NA      NA       NA    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1                       -5.481e-05  3.486e-03  -0.016  0.98746    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2                               NA         NA      NA       NA    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3                       -1.293e-03  3.541e-03  -0.365  0.71503    
+aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4                               NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1   6.547e-04  1.717e-03   0.381  0.70292    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1          NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11  1.112e-03  1.799e-03   0.618  0.53647    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11  2.037e-03  1.687e-03   1.208  0.22721    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2   4.013e-05  1.534e-03   0.026  0.97913    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2   1.288e-03  1.063e-03   1.212  0.22547    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3   3.642e-04  1.545e-03   0.236  0.81358    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3   1.692e-03  1.141e-03   1.484  0.13799    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4   2.796e-04  1.562e-03   0.179  0.85796    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4   1.310e-03  2.024e-03   0.647  0.51754    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5   4.083e-04  1.607e-03   0.254  0.79941    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5   1.524e-03  1.167e-03   1.307  0.19144    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2            NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2            NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1   6.987e-04  1.553e-03   0.450  0.65281    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1   1.834e-03  1.075e-03   1.705  0.08818 .  
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2   9.728e-04  1.605e-03   0.606  0.54435    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2   2.148e-03  1.191e-03   1.804  0.07137 .  
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3          NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3          NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3            NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3            NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1  -1.047e-03  1.635e-03  -0.640  0.52223    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1          NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2          NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2          NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3          NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3          NA         NA      NA       NA    
+as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4          NA         NA      NA       NA    
+as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4          NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1983 on 4318 degrees of freedom
+Multiple R-squared:  0.8827,	Adjusted R-squared:  0.8788 
+F-statistic: 230.4 on 141 and 4318 DF,  p-value: < 2.2e-16
+
+[1] "u_aw = 1.487945e+00 - 5.017245e-01 * as.factor(bak_grob)2 + 1.029597e+00 * as.factor(bak_grob)3 - 1.915058e-02 * aw_flantgedges - 8.491502e-02 * aw_daemm_staerke_1 - 1.948128e-01 * as.factor(aw_konstr_1)1.1 - 6.128397e-01 * as.factor(aw_konstr_1)1.11 + 9.493126e-02 * as.factor(aw_konstr_1)1.2 - 2.829944e-01 * as.factor(aw_konstr_1)1.3 - 3.046798e-01 * as.factor(aw_konstr_1)1.4 - 6.865831e-01 * as.factor(aw_konstr_1)1.5 - 4.879445e-01 * as.factor(aw_konstr_1)2 - 6.503068e-02 * as.factor(aw_konstr_1)2.1 - 9.591316e-01 * as.factor(aw_konstr_1)2.2 + 2.648178e-01 * as.factor(aw_konstr_1)2.3 + 7.314385e-01 * as.factor(aw_konstr_1)3 + 6.956874e-01 * as.factor(aw_konstr_1)3.1 - 2.679643e-01 * as.factor(aw_konstr_1)3.2 + 6.449001e-01 * as.factor(aw_konstr_1)3.3 + 8.166620e-01 * as.factor(aw_konstr_1)3.4 + 9.133941e-03 * as.factor(bak_grob)2:aw_flantgedges - 6.604996e-02 * as.factor(bak_grob)3:aw_flantgedges + 2.439940e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1 + 6.990970e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1 + 1.412819e-03 * aw_flantgedges:aw_daemm_staerke_1 - 1.909419e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)1.1 - 2.022729e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)1.1 + 2.376398e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)1.11 - 1.550203e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)1.11 - 5.387331e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)1.2 - 2.314041e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)1.2 - 2.202324e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)1.3 - 2.033562e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)1.3 - 9.667369e-02 * as.factor(bak_grob)2:as.factor(aw_konstr_1)1.4 - 1.817820e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)1.4 + 3.753086e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)1.5 - 1.531051e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)1.5 + 2.779586e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)2NA          NA * as.factor(bak_grob)3:as.factor(aw_konstr_1)2 - 3.543978e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)2.1 - 2.151929e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)2.1 + 3.735284e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)2.2 - 1.358158e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)2.2NA          NA * as.factor(bak_grob)2:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)3:as.factor(aw_konstr_1)2.3 - 1.765858e-02 * as.factor(bak_grob)2:as.factor(aw_konstr_1)3NA          NA * as.factor(bak_grob)3:as.factor(aw_konstr_1)3 - 5.596091e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)3.1 - 2.716021e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)3.1 - 1.825580e-02 * as.factor(bak_grob)2:as.factor(aw_konstr_1)3.2NA          NA * as.factor(bak_grob)3:as.factor(aw_konstr_1)3.2 - 7.734947e-01 * as.factor(bak_grob)2:as.factor(aw_konstr_1)3.3 - 2.537257e+00 * as.factor(bak_grob)3:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)2:as.factor(aw_konstr_1)3.4NA          NA * as.factor(bak_grob)3:as.factor(aw_konstr_1)3.4 + 9.937219e-03 * aw_flantgedges:as.factor(aw_konstr_1)1.1 + 1.470655e-02 * aw_flantgedges:as.factor(aw_konstr_1)1.11 + 3.966008e-03 * aw_flantgedges:as.factor(aw_konstr_1)1.2 + 1.172895e-02 * aw_flantgedges:as.factor(aw_konstr_1)1.3 + 9.814472e-03 * aw_flantgedges:as.factor(aw_konstr_1)1.4 + 1.891649e-02 * aw_flantgedges:as.factor(aw_konstr_1)1.5 + 7.654499e-03 * aw_flantgedges:as.factor(aw_konstr_1)2 + 1.164500e-02 * aw_flantgedges:as.factor(aw_konstr_1)2.1 + 2.368491e-02 * aw_flantgedges:as.factor(aw_konstr_1)2.2 + 4.498733e-03 * aw_flantgedges:as.factor(aw_konstr_1)2.3 - 8.666138e-03 * aw_flantgedges:as.factor(aw_konstr_1)3 - 1.358182e-02 * aw_flantgedges:as.factor(aw_konstr_1)3.1 + 3.160808e-02 * aw_flantgedges:as.factor(aw_konstr_1)3.2 + 5.023669e-03 * aw_flantgedges:as.factor(aw_konstr_1)3.3NA          NA * aw_flantgedges:as.factor(aw_konstr_1)3.4 + 7.748803e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1 + 9.964711e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11 + 5.881125e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2 + 6.918297e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3 + 5.147309e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4 + 6.429755e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5 + 3.532096e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)2 + 7.759026e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1 + 9.588421e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2 + 4.784470e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3 + 1.100690e-03 * aw_daemm_staerke_1:as.factor(aw_konstr_1)3 + 3.061103e-03 * aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1 + 2.907188e-02 * aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2 - 6.673636e-03 * aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3NA          NA * aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4 - 4.733569e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1 - 1.493240e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1 - 2.200642e-03 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.1 + 7.324466e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.1 - 6.145238e-03 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.11 + 7.002542e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.11 + 7.121609e-03 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.2 + 8.168558e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.2 + 9.540822e-04 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.3 + 7.377378e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.3 - 6.687624e-04 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.4 + 7.470127e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.4 - 9.135884e-03 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)1.5 + 6.694230e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)1.5NA          NA * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2NA          NA * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2 - 1.199763e-03 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2.1 + 7.449022e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2.1 - 1.263750e-02 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2.2 + 6.189320e-02 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2.2NA          NA * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3NA          NA * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3 + 2.552561e-02 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.1 + 1.002639e-01 * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.1NA          NA * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.2NA          NA * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.2 + 8.180714e-03 * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)2:aw_flantgedges:as.factor(aw_konstr_1)3.4NA          NA * as.factor(bak_grob)3:aw_flantgedges:as.factor(aw_konstr_1)3.4 - 3.759948e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1 - 6.247529e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11 - 9.302712e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11 - 1.888360e-03 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2 - 4.847453e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2 - 1.126331e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3 - 5.507005e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3 - 8.061012e-03 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4 - 4.642662e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4 - 2.196847e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5 - 5.573383e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5NA          NA * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2 - 2.480859e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1 - 6.700893e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1 - 3.682772e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2 - 8.367600e-02 * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2NA          NA * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3 + 9.050177e-03 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1NA          NA * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2 + 3.811819e-02 * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)2:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4NA          NA * as.factor(bak_grob)3:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4 - 1.662678e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1 - 1.956503e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11 - 1.245876e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2 - 1.633694e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3 - 1.209294e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4 - 1.481764e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5 - 9.092923e-04 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2 - 1.831891e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1 - 2.078909e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2 - 1.273055e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3NA          NA * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3 - 5.481015e-05 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1NA          NA * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2 - 1.292856e-03 * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3NA          NA * aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4 + 6.547485e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.1 + 1.111938e-03 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11 + 2.036962e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.11 + 4.013298e-05 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2 + 1.288339e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.2 + 3.642451e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3 + 1.692306e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.3 + 2.796072e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4 + 1.309628e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.4 + 4.082746e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5 + 1.524453e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)1.5NA          NA * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2 + 6.986985e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1 + 1.833949e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.1 + 9.728252e-04 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2 + 2.147555e-03 * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.2NA          NA * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)2.3NA          NA * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3 - 1.046548e-03 * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.1NA          NA * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.2NA          NA * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.3NA          NA * as.factor(bak_grob)2:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4NA          NA * as.factor(bak_grob)3:aw_flantgedges:aw_daemm_staerke_1:as.factor(aw_konstr_1)3.4"

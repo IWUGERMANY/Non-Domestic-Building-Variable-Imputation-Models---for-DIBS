@@ -1,0 +1,56 @@
+
+Call:
+lm(formula = fen_fl ~ as.factor(hk_geb):as.factor(bak_grob):fen_flant_1 + 
+    geb_f_hoehe_mittel_iwu + nrf_2, weights = (HRF/Sum_HRF_BE_clean) * 
+    N_Clean)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-4932.4   -95.5    -9.0    60.3  9000.0 
+
+Coefficients:
+                                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                          -5.463e+02  1.605e+01 -34.048  < 2e-16 ***
+geb_f_hoehe_mittel_iwu                                4.747e+01  1.754e+00  27.063  < 2e-16 ***
+nrf_2                                                 7.632e-02  1.611e-03  47.382  < 2e-16 ***
+as.factor(hk_geb)1:as.factor(bak_grob)1:fen_flant_1   1.129e+01  6.287e-01  17.955  < 2e-16 ***
+as.factor(hk_geb)2:as.factor(bak_grob)1:fen_flant_1   1.676e+01  1.608e+00  10.428  < 2e-16 ***
+as.factor(hk_geb)3:as.factor(bak_grob)1:fen_flant_1   1.718e+01  1.586e+00  10.831  < 2e-16 ***
+as.factor(hk_geb)4:as.factor(bak_grob)1:fen_flant_1   1.632e+01  6.461e-01  25.262  < 2e-16 ***
+as.factor(hk_geb)5:as.factor(bak_grob)1:fen_flant_1   1.180e+01  8.514e-01  13.860  < 2e-16 ***
+as.factor(hk_geb)6:as.factor(bak_grob)1:fen_flant_1   4.002e+01  8.187e-01  48.886  < 2e-16 ***
+as.factor(hk_geb)7:as.factor(bak_grob)1:fen_flant_1   9.759e+00  6.591e-01  14.807  < 2e-16 ***
+as.factor(hk_geb)8:as.factor(bak_grob)1:fen_flant_1   1.190e+01  5.332e-01  22.324  < 2e-16 ***
+as.factor(hk_geb)9:as.factor(bak_grob)1:fen_flant_1   1.015e+01  8.784e-01  11.560  < 2e-16 ***
+as.factor(hk_geb)10:as.factor(bak_grob)1:fen_flant_1  9.905e+00  1.573e+00   6.298 3.28e-10 ***
+as.factor(hk_geb)11:as.factor(bak_grob)1:fen_flant_1  1.398e+01  1.453e+00   9.623  < 2e-16 ***
+as.factor(hk_geb)1:as.factor(bak_grob)2:fen_flant_1   1.430e+01  5.888e-01  24.277  < 2e-16 ***
+as.factor(hk_geb)2:as.factor(bak_grob)2:fen_flant_1   2.103e+01  2.182e+00   9.640  < 2e-16 ***
+as.factor(hk_geb)3:as.factor(bak_grob)2:fen_flant_1   1.230e+01  1.009e+00  12.189  < 2e-16 ***
+as.factor(hk_geb)4:as.factor(bak_grob)2:fen_flant_1   1.153e+01  7.022e-01  16.421  < 2e-16 ***
+as.factor(hk_geb)5:as.factor(bak_grob)2:fen_flant_1   1.336e+01  1.262e+00  10.586  < 2e-16 ***
+as.factor(hk_geb)6:as.factor(bak_grob)2:fen_flant_1   1.355e+01  1.555e+00   8.713  < 2e-16 ***
+as.factor(hk_geb)7:as.factor(bak_grob)2:fen_flant_1   1.207e+01  8.444e-01  14.293  < 2e-16 ***
+as.factor(hk_geb)8:as.factor(bak_grob)2:fen_flant_1   1.297e+01  6.297e-01  20.598  < 2e-16 ***
+as.factor(hk_geb)9:as.factor(bak_grob)2:fen_flant_1   1.036e+01  7.257e-01  14.278  < 2e-16 ***
+as.factor(hk_geb)10:as.factor(bak_grob)2:fen_flant_1  1.367e+01  1.801e+00   7.587 3.88e-14 ***
+as.factor(hk_geb)11:as.factor(bak_grob)2:fen_flant_1  9.233e+00  7.394e+00   1.249   0.2118    
+as.factor(hk_geb)1:as.factor(bak_grob)3:fen_flant_1   1.173e+01  2.091e+00   5.610 2.14e-08 ***
+as.factor(hk_geb)2:as.factor(bak_grob)3:fen_flant_1   1.543e+01  3.451e+00   4.471 7.96e-06 ***
+as.factor(hk_geb)3:as.factor(bak_grob)3:fen_flant_1   2.182e+01  2.844e+00   7.673 2.02e-14 ***
+as.factor(hk_geb)4:as.factor(bak_grob)3:fen_flant_1   1.317e+01  2.389e+00   5.514 3.70e-08 ***
+as.factor(hk_geb)5:as.factor(bak_grob)3:fen_flant_1   4.078e+00  9.852e-01   4.140 3.54e-05 ***
+as.factor(hk_geb)6:as.factor(bak_grob)3:fen_flant_1   1.965e+01  8.475e+00   2.318   0.0205 *  
+as.factor(hk_geb)7:as.factor(bak_grob)3:fen_flant_1   1.236e+01  4.957e+00   2.492   0.0127 *  
+as.factor(hk_geb)8:as.factor(bak_grob)3:fen_flant_1   1.787e+01  2.507e+00   7.128 1.16e-12 ***
+as.factor(hk_geb)9:as.factor(bak_grob)3:fen_flant_1   1.568e+01  3.024e+00   5.186 2.23e-07 ***
+as.factor(hk_geb)10:as.factor(bak_grob)3:fen_flant_1  1.659e+01  6.239e+01   0.266   0.7903    
+as.factor(hk_geb)11:as.factor(bak_grob)3:fen_flant_1  3.860e+01  2.023e+01   1.908   0.0565 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 393.5 on 4945 degrees of freedom
+Multiple R-squared:  0.6443,	Adjusted R-squared:  0.6418 
+F-statistic:   256 on 35 and 4945 DF,  p-value: < 2.2e-16
+
+[1] "fen_fl = - 546.34584027 +  47.47406763 * geb_f_hoehe_mittel_iwu +   0.07632396 * nrf_2 +  11.28747387 * as.factor(hk_geb)1:as.factor(bak_grob)1:fen_flant_1 +  16.76327759 * as.factor(hk_geb)2:as.factor(bak_grob)1:fen_flant_1 +  17.17550798 * as.factor(hk_geb)3:as.factor(bak_grob)1:fen_flant_1 +  16.32240974 * as.factor(hk_geb)4:as.factor(bak_grob)1:fen_flant_1 +  11.80145152 * as.factor(hk_geb)5:as.factor(bak_grob)1:fen_flant_1 +  40.02469283 * as.factor(hk_geb)6:as.factor(bak_grob)1:fen_flant_1 +   9.75925790 * as.factor(hk_geb)7:as.factor(bak_grob)1:fen_flant_1 +  11.90334952 * as.factor(hk_geb)8:as.factor(bak_grob)1:fen_flant_1 +  10.15481940 * as.factor(hk_geb)9:as.factor(bak_grob)1:fen_flant_1 +   9.90452619 * as.factor(hk_geb)10:as.factor(bak_grob)1:fen_flant_1 +  13.98250853 * as.factor(hk_geb)11:as.factor(bak_grob)1:fen_flant_1 +  14.29512571 * as.factor(hk_geb)1:as.factor(bak_grob)2:fen_flant_1 +  21.03069808 * as.factor(hk_geb)2:as.factor(bak_grob)2:fen_flant_1 +  12.30239804 * as.factor(hk_geb)3:as.factor(bak_grob)2:fen_flant_1 +  11.53113793 * as.factor(hk_geb)4:as.factor(bak_grob)2:fen_flant_1 +  13.35731997 * as.factor(hk_geb)5:as.factor(bak_grob)2:fen_flant_1 +  13.54577107 * as.factor(hk_geb)6:as.factor(bak_grob)2:fen_flant_1 +  12.06875933 * as.factor(hk_geb)7:as.factor(bak_grob)2:fen_flant_1 +  12.97002263 * as.factor(hk_geb)8:as.factor(bak_grob)2:fen_flant_1 +  10.36163743 * as.factor(hk_geb)9:as.factor(bak_grob)2:fen_flant_1 +  13.66527076 * as.factor(hk_geb)10:as.factor(bak_grob)2:fen_flant_1 +   9.23313972 * as.factor(hk_geb)11:as.factor(bak_grob)2:fen_flant_1 +  11.73117876 * as.factor(hk_geb)1:as.factor(bak_grob)3:fen_flant_1 +  15.42990371 * as.factor(hk_geb)2:as.factor(bak_grob)3:fen_flant_1 +  21.81710612 * as.factor(hk_geb)3:as.factor(bak_grob)3:fen_flant_1 +  13.17330553 * as.factor(hk_geb)4:as.factor(bak_grob)3:fen_flant_1 +   4.07849438 * as.factor(hk_geb)5:as.factor(bak_grob)3:fen_flant_1 +  19.64654878 * as.factor(hk_geb)6:as.factor(bak_grob)3:fen_flant_1 +  12.35514964 * as.factor(hk_geb)7:as.factor(bak_grob)3:fen_flant_1 +  17.87282987 * as.factor(hk_geb)8:as.factor(bak_grob)3:fen_flant_1 +  15.68401403 * as.factor(hk_geb)9:as.factor(bak_grob)3:fen_flant_1 +  16.58933146 * as.factor(hk_geb)10:as.factor(bak_grob)3:fen_flant_1 +  38.59621862 * as.factor(hk_geb)11:as.factor(bak_grob)3:fen_flant_1"

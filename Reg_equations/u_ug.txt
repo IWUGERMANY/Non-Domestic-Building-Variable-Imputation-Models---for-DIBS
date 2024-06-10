@@ -1,0 +1,41 @@
+[1] "Also the regression equation contains NAs, it has been used for the imputation, as these combinations do not exist in the DataNWG BRE data and therfore do not affect the prediction"
+
+Call:
+lm(formula = u_ug ~ as.factor(hk_geb) + as.factor(bak), weights = (HRF/Sum_HRF_BE_clean))
+
+Weighted Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.058733 -0.000597  0.000488  0.001413  0.026279 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          0.76845    0.02175  35.337  < 2e-16 ***
+as.factor(hk_geb)2   0.11227    0.03999   2.807 0.005021 ** 
+as.factor(hk_geb)3  -0.08049    0.02706  -2.975 0.002950 ** 
+as.factor(hk_geb)4   0.02628    0.01675   1.569 0.116724    
+as.factor(hk_geb)5   0.01361    0.01717   0.793 0.427868    
+as.factor(hk_geb)6   0.03185    0.02444   1.303 0.192528    
+as.factor(hk_geb)7   0.05715    0.01391   4.108 4.08e-05 ***
+as.factor(hk_geb)8   0.04034    0.01186   3.401 0.000679 ***
+as.factor(hk_geb)9   0.13962    0.01749   7.984 1.91e-15 ***
+as.factor(hk_geb)10  0.09363    0.02174   4.307 1.70e-05 ***
+as.factor(hk_geb)11 -0.03464    0.03367  -1.029 0.303640    
+as.factor(bak)2      0.19353    0.02229   8.682  < 2e-16 ***
+as.factor(bak)3      0.11618    0.02513   4.623 3.92e-06 ***
+as.factor(bak)4      0.30315    0.02416  12.545  < 2e-16 ***
+as.factor(bak)5      0.17421    0.02170   8.029 1.33e-15 ***
+as.factor(bak)6      0.04371    0.02203   1.984 0.047336 *  
+as.factor(bak)7     -0.10758    0.02701  -3.984 6.93e-05 ***
+as.factor(bak)8     -0.30725    0.02231 -13.773  < 2e-16 ***
+as.factor(bak)9     -0.47350    0.02398 -19.746  < 2e-16 ***
+as.factor(bak)10    -0.57297    0.02383 -24.040  < 2e-16 ***
+as.factor(bak)11    -0.57363    0.02969 -19.321  < 2e-16 ***
+as.factor(bak)12    -0.57140    0.04951 -11.540  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.003727 on 3456 degrees of freedom
+Multiple R-squared:  0.6444,	Adjusted R-squared:  0.6423 
+F-statistic: 298.3 on 21 and 3456 DF,  p-value: < 2.2e-16
+
+[1] "u_ug = 0.76844989 + 0.11227297 * as.factor(hk_geb)2 - 0.08049337 * as.factor(hk_geb)3 + 0.02627921 * as.factor(hk_geb)4 + 0.01361083 * as.factor(hk_geb)5 + 0.03185053 * as.factor(hk_geb)6 + 0.05715493 * as.factor(hk_geb)7 + 0.04034365 * as.factor(hk_geb)8 + 0.13961843 * as.factor(hk_geb)9 + 0.09362549 * as.factor(hk_geb)10 - 0.03464465 * as.factor(hk_geb)11 + 0.19352906 * as.factor(bak)2 + 0.11618356 * as.factor(bak)3 + 0.30315042 * as.factor(bak)4 + 0.17421014 * as.factor(bak)5 + 0.04371441 * as.factor(bak)6 - 0.10757852 * as.factor(bak)7 - 0.30725083 * as.factor(bak)8 - 0.47349925 * as.factor(bak)9 - 0.57297061 * as.factor(bak)10 - 0.57363102 * as.factor(bak)11 - 0.57139667 * as.factor(bak)12"

@@ -1,0 +1,29 @@
+Call:
+multinom(formula = qf1 ~ as.factor(hk_geb) * q66a_1, data = DB_BE_clean, 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean, maxit = 1000, 
+    MaxNWts = 1000)
+
+Coefficients:
+  (Intercept) as.factor(hk_geb)2 as.factor(hk_geb)3 as.factor(hk_geb)4 as.factor(hk_geb)5 as.factor(hk_geb)6 as.factor(hk_geb)7 as.factor(hk_geb)8 as.factor(hk_geb)9 as.factor(hk_geb)10 as.factor(hk_geb)11
+2   -2.906538         -8.7101213         -2.1204724         -0.8298259         -0.2246624           1.978049          0.8301832         0.84442939          0.8931462           -5.792596            5.176711
+3   -1.866455         -0.3021302         -0.3980996         -0.4309823          0.2159343           1.578360         -0.2168174         0.05184259          0.7929134           -1.852673            3.412059
+         q66a_1 as.factor(hk_geb)2:q66a_1 as.factor(hk_geb)3:q66a_1 as.factor(hk_geb)4:q66a_1 as.factor(hk_geb)5:q66a_1 as.factor(hk_geb)6:q66a_1 as.factor(hk_geb)7:q66a_1 as.factor(hk_geb)8:q66a_1
+2  8.199821e-06               0.026920171               0.010053714               0.001432181             -0.0007795458             -0.0006740944              -0.009630658             -0.0023812260
+3 -3.861450e-04               0.004059432               0.004522312               0.001013147              0.0010607167             -0.0024303837               0.002659190              0.0007871994
+  as.factor(hk_geb)9:q66a_1 as.factor(hk_geb)10:q66a_1 as.factor(hk_geb)11:q66a_1
+2              0.0011114845                0.016256050               -0.010598708
+3              0.0001544623                0.002078539               -0.004640338
+
+Std. Errors:
+  (Intercept) as.factor(hk_geb)2 as.factor(hk_geb)3 as.factor(hk_geb)4 as.factor(hk_geb)5 as.factor(hk_geb)6 as.factor(hk_geb)7 as.factor(hk_geb)8 as.factor(hk_geb)9 as.factor(hk_geb)10 as.factor(hk_geb)11
+2   0.1961794         0.00657700         0.00625664          0.3671808         0.05469358          0.4261604        0.003192808          0.3680702          0.3662762          0.04154525          0.02931935
+3   0.1586409         0.01897934         0.01253815          0.3915231         0.30990073          0.5246620        0.553237177          0.1990541          0.3981724          0.01940520          0.09825475
+        q66a_1 as.factor(hk_geb)2:q66a_1 as.factor(hk_geb)3:q66a_1 as.factor(hk_geb)4:q66a_1 as.factor(hk_geb)5:q66a_1 as.factor(hk_geb)6:q66a_1 as.factor(hk_geb)7:q66a_1 as.factor(hk_geb)8:q66a_1
+2 0.0004583382               0.001320635              0.0012345011               0.001144195               0.001114382              0.0009361763               0.001712711              0.0009527741
+3 0.0004462474               0.001092666              0.0008010463               0.001313158               0.000823278              0.0013775697               0.002016784              0.0005012355
+  as.factor(hk_geb)9:q66a_1 as.factor(hk_geb)10:q66a_1 as.factor(hk_geb)11:q66a_1
+2              0.0008943414               0.0006528264               0.0015202731
+3              0.0010887642               0.0011473266               0.0008135273
+
+Residual Deviance: 6354.403 
+AIC: 6442.403 

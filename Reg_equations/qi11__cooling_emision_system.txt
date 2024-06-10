@@ -1,0 +1,36 @@
+[1] "Also the regression equation contains NAs, it has been used for the imputation, as these combinations do not exist in the DataNWG BRE data and therfore do not affect the prediction"
+Call:
+multinom(formula = qi11 ~ as.factor(bak) * f_ant_gekuehlt, data = DB_BE_clean, 
+    weights = (HRF/Sum_HRF_BE_clean) * N_Clean, maxit = 1000, 
+    MaxNWts = 1000)
+
+Coefficients:
+  (Intercept) as.factor(bak)2 as.factor(bak)3 as.factor(bak)4 as.factor(bak)5 as.factor(bak)6 as.factor(bak)7 as.factor(bak)8 as.factor(bak)9 as.factor(bak)10 as.factor(bak)11 as.factor(bak)12 f_ant_gekuehlt
+2   -3.413826        3.051862        3.972047       -8.315439       0.5076732        4.019529        74.18352        4.046815        1.778041          5.61365        -11.10391      -8.69592362     0.02138171
+3 -155.658955      -73.638936    -1271.126084      147.042563     151.5173277      152.279932       140.42832      155.158881      153.214683        153.40045        154.29932       0.04109205    -1.95084890
+4   22.155495      -34.515385      -26.017362      -22.391620     -20.5806018      -26.985437       -29.61806      -27.731895      -23.922060        -24.63089        -32.06347    -114.94163081   -23.38904516
+  as.factor(bak)2:f_ant_gekuehlt as.factor(bak)3:f_ant_gekuehlt as.factor(bak)4:f_ant_gekuehlt as.factor(bak)5:f_ant_gekuehlt as.factor(bak)6:f_ant_gekuehlt as.factor(bak)7:f_ant_gekuehlt
+2                    -0.07265389                   -0.001660986                      0.1225913                    0.007551182                    -0.03177589                     -28.548280
+3                     4.25213636                   19.269344558                      2.0550880                    1.983490199                     1.89367562                       2.144102
+4                   -39.26758208                   23.440571099                     23.0391308                   -4.936811091                    20.58262095                    -136.598456
+  as.factor(bak)8:f_ant_gekuehlt as.factor(bak)9:f_ant_gekuehlt as.factor(bak)10:f_ant_gekuehlt as.factor(bak)11:f_ant_gekuehlt as.factor(bak)12:f_ant_gekuehlt
+2                     -0.1051423                     -0.0251765                     -0.08034262                       -98.70587                    -124.6154940
+3                      1.8465896                      1.9480150                      1.95569566                         1.93802                      -0.1573113
+4                    -61.3959232                     23.3502936                     23.38913309                        23.49041                      24.3056009
+
+Std. Errors:
+  (Intercept) as.factor(bak)2 as.factor(bak)3 as.factor(bak)4 as.factor(bak)5 as.factor(bak)6 as.factor(bak)7 as.factor(bak)8 as.factor(bak)9 as.factor(bak)10 as.factor(bak)11 as.factor(bak)12 f_ant_gekuehlt
+2    1.159975    1.3563190823    1.388624e+00        9.444088    1.668412e+00    1.2830225682    9.917119e-06    1.236382e+00        1.471213         1.304011     1.004081e-11              NaN     0.04578355
+3    2.029066    0.0002417649    8.661596e-14        4.661406    2.676500e+00    4.4343878203    1.492427e+01    2.130666e+00        2.322772         2.363683     2.345233e+00              NaN     0.03098905
+4    1.431947             NaN    3.547257e+00        3.665086    4.864857e-11    0.0009676659   3.254734e-147   2.452798e-112        1.941172         2.054111     9.317189e+00       0.01315714     1.31319032
+  as.factor(bak)2:f_ant_gekuehlt as.factor(bak)3:f_ant_gekuehlt as.factor(bak)4:f_ant_gekuehlt as.factor(bak)5:f_ant_gekuehlt as.factor(bak)6:f_ant_gekuehlt as.factor(bak)7:f_ant_gekuehlt
+2                   5.061527e-02                      0.0561521                     0.14352273                   5.304439e-02                    0.046746429                   2.169687e-05
+3                   2.417648e-02                            NaN                     0.07745729                   4.632817e-02                    0.140254590                   1.973594e-01
+4                   2.455797e-31                      1.3043134                     1.31846624                   4.864857e-11                    0.001938497                  6.509468e-147
+  as.factor(bak)8:f_ant_gekuehlt as.factor(bak)9:f_ant_gekuehlt as.factor(bak)10:f_ant_gekuehlt as.factor(bak)11:f_ant_gekuehlt as.factor(bak)12:f_ant_gekuehlt
+2                   5.095654e-02                     0.04782270                      0.04851419                    2.633437e-12                             NaN
+3                   5.781371e-02                     0.03546119                      0.03509715                    4.150887e-02                    2.692490e-25
+4                  7.358395e-112                     1.31124428                      1.31146669                    1.250704e+00                    1.314993e+00
+
+Residual Deviance: 461.4538 
+AIC: 605.4538 
