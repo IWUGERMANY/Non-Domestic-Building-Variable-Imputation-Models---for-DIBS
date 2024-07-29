@@ -1,6 +1,8 @@
 # Non-Domestic-Building-Variable-Imputation-Models---for-DIBS
 This repository provides regression models to 'estimate' the most likely values for imputation purposes. The models are statistically representative of the German non-domestic building stock and cover DIBS input variables with a larger probability of missing values. For a better understanding, the models' summaries are provided in the .txt files, while the R-based models are provided via .rds files.
 
+Further, also the scripts used for the development of these estimation models are provided. BE_imputation.R is the main script, testing the individual variables vor missing values and describing the general approch of tackeling the imputation. This script utilises the scripts available in the einzel_imputationen folder. Those each include the deveolopment of the variabel esimators and the application for the imputation. Last the Determination-of-full-datasets folder holds the script used to analyse the overall extend of missing variables.
+
 These models were developed using the interview data set of the ENOB:DataNWG Project https://datanwg.de. The development was undertaken within the PhD project of Julian Bischof. Details are published with the Ph.D. thesis (coming soon). 
 
 Due to data protection reasons, the full data set on which the model development is based can not be provided. However, the data set can be partly accessed and analysed to a certain extent via https://datanwg.de/forschungsdatenbank/. More information on the Dynamic ISO Building Simulator (DIBS) is available here: https://iwugermany.github.io/dibs/overview
